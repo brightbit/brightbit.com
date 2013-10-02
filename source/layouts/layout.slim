@@ -1,8 +1,39 @@
-html5
+doctype html
 html
   head
     meta charset="utf-8"
-    meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1'
+    meta http-equiv="X-UA-Compatible" content="IE=edge"
+    meta name="description" content=""
+    meta name="viewport" content="width=device-width, initial-scale=1"
 
-  body= yield
-  
+    title= current_page.data.title || ""
+
+    script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"
+    = javascript_include_tag "applicaiton"
+    /[if lt IE 9]
+      script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"
+
+    = stylesheet_link_tag "application", media: "all"
+
+  body class=page_classes
+    .navbar.navbar-static-top.navbar-inverse
+      .navbar-inner
+        .container
+          a.btn.btn-navbar data-target=".nav-collapse" data-toggle="collapse"
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          = link_to "Brightbit", "/"
+          .container.nav-collapse
+            ul.nav
+              li= link_to "Link 1", "path1"
+              li= link_to "Link 2", "path2"
+              li= link_to "Link 3", "path3"
+
+    #content.container
+      = yield
+
+    .container
+      footer
+        p © 2013
+
