@@ -3,17 +3,25 @@
 
   .navbar-inner
     background: white
+    border-bottom: none
+    @include box-shadow(0 0 5px rgba(0,0,0,0.25))
 
-  .brand, .nav > li > a
-    padding: 20px
+  .nav
+    li
+      padding: 0
+      a
+        padding: 25px
 
   .logo-header
     @extend .text-replace
     float: left
-    background: image_url("logo-header.png") no-repeat
+    background: image_url("logo-header.svg") no-repeat
     height: 50px
     width: 182px
-    margin: 5px 10px
+    margin: 10px
+
+    .no-svg &
+      background-image: image_url("logo-header.png")
 
 
 .navbar-toggle
