@@ -8,8 +8,9 @@ html
 
     title= current_page.data.title || ""
 
-    script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"
-    = javascript_include_tag "applicaiton"
+    = javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js", "data-turbolinks-track" => true
+    = javascript_include_tag "application", "data-turbolinks-track" => true
+
     /[if lt IE 9]
       script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"
 
@@ -18,22 +19,24 @@ html
   body class=page_classes
     .navbar.navbar-static-top.navbar-inverse
       .navbar-inner
-        .container
+        .container-fluid
           a.btn.btn-navbar data-target=".nav-collapse" data-toggle="collapse"
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          = link_to "Brightbit", "/"
-          .container.nav-collapse
+          = link_to "Brightbit", "/", class: "brand"
+          .nav-collapse
             ul.nav
-              li= link_to "Link 1", "path1"
-              li= link_to "Link 2", "path2"
-              li= link_to "Link 3", "path3"
+              li= link_to "About", "/about"
+              li= link_to "Jobs", "/jobs"
+              li= link_to "Blog", "/blog"
 
-    #content.container
+    #content.container-fluid
       = yield
 
-    .container
+    .container-fluid
+      .contact
+        h2 Contact
       footer
         p © 2013
 
