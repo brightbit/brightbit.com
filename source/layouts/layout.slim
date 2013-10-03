@@ -10,33 +10,40 @@ html
 
     = javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js", "data-turbolinks-track" => true
     = javascript_include_tag "application", "data-turbolinks-track" => true
+    = stylesheet_link_tag "application", media: "all"
+
+    / Mapbox
+    = javascript_include_tag "http://api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.js"
+    = stylesheet_link_tag "http://api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.css"
 
     /[if lt IE 9]
       script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"
-
-    = stylesheet_link_tag "application", media: "all"
+    = stylesheet_link_tag "http://api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.ie.css"
 
   body class=page_classes
-    .navbar.navbar-static-top.navbar-inverse
+    header.navbar.navbar-fixed-top
       .navbar-inner
-        .container-fluid
-          a.btn.btn-navbar data-target=".nav-collapse" data-toggle="collapse"
+        .container
+          button.navbar-toggle data-target=".nav-collapse" data-toggle="collapse"
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          = link_to "Brightbit", "/", class: "brand"
-          .nav-collapse
+          .pull-left= link_to "Brightbit", "/", class: "logo-header"
+          .nav-collapse.pull-right
             ul.nav
               li= link_to "About", "/about"
               li= link_to "Jobs", "/jobs"
               li= link_to "Blog", "/blog"
 
-    #content.container-fluid
+    - if content_for?(:title)
+      .title= yield :title
+
+    .content.container
       = yield
 
-    .container-fluid
-      .contact
+    .contact#map
+      .container
         h2 Contact
-      footer
-        p © 2013
+
+    footer.site-footer Site by Brightbit &copy; 2013
 

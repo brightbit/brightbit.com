@@ -1,0 +1,45 @@
+.navbar
+  opacity: .94
+
+  .navbar-inner
+    background: white
+
+  .brand, .nav > li > a
+    padding: 20px
+
+  .logo-header
+    @extend .text-replace
+    float: left
+    background: image_url("logo-header.png") no-repeat
+    height: 50px
+    width: 182px
+    margin: 5px 10px
+
+
+.navbar-toggle
+  position: relative
+  float: right
+  padding: 10px
+  margin: 10px 15px
+  background-color: transparent
+  border: 1px solid transparent
+  border-radius: 4px
+
+  .icon-bar
+    background: $weak
+    display: block
+    width: 22px
+    height: 2px
+    border-radius: 1px
+    margin-top: 4px
+
+  @media (min-width: 768px)
+    display: none
+
+#nprogress
+  z-index: 1100
+  .bar
+    background: $orange
+  .peg
+    +box-shadow((0 0 10px $orange, 0 0 5px $orange))
+

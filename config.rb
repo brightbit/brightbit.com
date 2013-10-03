@@ -1,6 +1,7 @@
 Time.zone = "UTC"
 
 activate :blog do |blog|
+  blog.layout = "layouts/blog"
   blog.permalink = "blog-:year-:month-:day-:title.html"
   blog.taglink = "tags/:tag.html"
   blog.tag_template = "tag.html"
@@ -13,6 +14,7 @@ activate :blog do |blog|
 end
 
 page "/feed.xml", :layout => false
+page "blog/*", :layout => :blog
 
 # page "/path/to/file.html", :layout => false
 # page "/path/to/file.html", :layout => :otherlayout
