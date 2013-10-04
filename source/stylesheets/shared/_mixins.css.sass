@@ -1,0 +1,82 @@
+=animation-delay($delay)
+  -webkit-animation-delay: $delay
+  -moz-animation-delay: $delay
+  -o-animation-delay: $delay
+  animation-delay: $delay
+
+=animation($args)
+  -webkit-animation: $args
+  -moz-animation: $args
+  -o-animation: $args
+  animation: $args
+
+=transform($args)
+  -webkit-transform: $args
+  -moz-transform: $args
+  -o-transform: $args
+  transform: $args
+
+=nipple($color: #EEE, $size: 10px, $position: top)
+  position: relative
+  z-index: 1
+  &:after
+    content: ""
+    display: block
+    position: absolute
+    z-index: -1
+    width: $size
+    height: $size
+    background: $color
+    @include transform(rotate(45deg))
+    @include transition(all 175ms cubic-bezier(0.86, 0, 0.07, 1))
+    @if $position == "top"
+      top: -($size/2)
+      margin-top: 1px
+      left: 50%
+      margin-left: -($size/2)
+    @if $position == "bottom"
+      bottom: -($size/2)
+      margin-top: -1px
+      left: 50%
+      margin-left: -($size/2)
+    @if $position == "left"
+      left: -($size/2)
+      top: 50%
+      margin-top: -($size/2)
+    @if $position == "right"
+      right: -($size/2)
+      top: 50%
+      margin-top: -($size/2)
+
+.text-replace
+  display: block
+  text-indent: 200%
+  white-space: nowrap
+  overflow: hidden
+
+=placeholder
+  &::placeholder
+    @content
+  &:-moz-placeholder
+    opacity: 1
+    @content
+  &::-moz-placeholder
+    opacity: 1
+    @content
+  &::-webkit-input-placeholder
+    @content
+  &.placeholder
+    @content
+
+=cover($zindex: 1)
+  position: fixed
+  z-index: $zindex
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+
+.text-overflow
+  text-overflow: ellipsis
+  display: block
+  overflow: hidden
