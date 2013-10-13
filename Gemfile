@@ -8,5 +8,5 @@ gem 'middleman-gh-pages',   github: 'neo/middleman-gh-pages'
 gem 'middleman-clowncar',   github: 'middleman/middleman-clowncar'
 gem 'turbolinks',           require: false
 gem 'slim',                 '~> 2.0.1'
-gem 'bootstrap-sass',       '~> 2.3.2'
+gem 'bootstrap-sass',       github: 'thomas-mcdonald/bootstrap-sass', branch: '3'
 

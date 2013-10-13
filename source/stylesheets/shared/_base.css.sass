@@ -23,8 +23,18 @@ h3
 h4
   font-size: 1.1em
 
+a
+  color: $blue
+  @include transition(all, 100ms)
+  &:hover
+    color: lighten($blue, 10%)
+    text-decoration: none
+
+
 
 // Elements
+img
+  max-width: 100%
 
 ul
   list-style: inside square
@@ -42,4 +52,8 @@ section
 
 .title
   padding: 100px
-
+  font-size: 2em
+  line-height: 1.35em
+  h1, h2, h3
+    font-size: 100%
+    line-height: 1.35em
