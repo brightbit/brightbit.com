@@ -2,7 +2,10 @@
 # Vendor
 ####
 #= require turbolinks
-#= require "vendor/nprogress"
+#= require bootstrap
+#= require vendor/nprogress
+#= require vendor/ss-standard
+#= require vendor/ss-symbolicons
 
 ####
 # Shared

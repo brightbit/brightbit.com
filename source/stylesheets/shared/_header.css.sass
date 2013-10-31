@@ -13,13 +13,12 @@
       padding: 0
       a
         padding: 20px
-        font-size: 13px
-        font-weight: 700
+        font-size: 15px
+        font-weight: 500
         text-transform: uppercase
 
   .navbar-brand
     @extend .text-replace
-    float: left
     background: image_url("logo-header.svg") no-repeat
     height: 50px
     width: 182px
@@ -29,24 +28,7 @@
       background-image: image_url("logo-header.png")
 
 .navbar-toggle
-  position: relative
-  float: right
-  padding: 10px
   margin: 10px 15px
-  background-color: transparent
-  border: 1px solid transparent
-  border-radius: 4px
-
-  .icon-bar
-    background: $weak
-    display: block
-    width: 22px
-    height: 2px
-    border-radius: 1px
-    margin: 2px
-
-  @media (min-width: 768px)
-    display: none
 
 #nprogress
   z-index: 1100

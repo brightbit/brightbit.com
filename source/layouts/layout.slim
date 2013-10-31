@@ -22,19 +22,20 @@ html
 
   body class=page_classes
     header.navbar.navbar-fixed-top role="navigation"
-      .navbar-header
-        button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"
-          span.sr-only Toggle navigation
-          span.icon-bar
-          span.icon-bar
-          span.icon-bar
-        = link_to "Brightbit", "/", class: "navbar-brand"
+      .container
+        .navbar-header
+          button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          = link_to "Brightbit", "/", class: "navbar-brand"
 
-      nav.collapse.navbar-collapse.navbar-ex1-collapse
-        .nav.navbar-nav.navbar-right
-          li= link_to "About", "/about"
-          li= link_to "Jobs", "/jobs"
-          li= link_to "Blog", "/blog"
+        nav.collapse.navbar-collapse
+          .nav.navbar-nav
+            li= link_to "About", "/about"
+            li= link_to "Jobs", "/jobs"
+            li= link_to "Blog", "/blog"
 
 
     - if content_for?(:title)

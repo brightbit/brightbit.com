@@ -5,19 +5,15 @@ section.section-intro
   p We provide blah blah
 
 section.section-jobs
-  h2 Open Positions
+  h2.section-title Open Positions
 
-  h3 Development
-  ul.list-jobs
+  ul.jobs-list
     li
-      p.jobs-title Developer
-
-  h3 Design
-  ul.list-jobs
+      = link_to "jobs/developer" do
+        .jobs-title Developer
     li
-      p.jobs-title Designer
-
-  h3 Production
-  ul.list-jobs
+      = link_to "jobs/designer" do
+        .jobs-title Designer
     li
-      p.jobs-title Producer
+      = link_to "jobs/producer" do
+        .jobs-title Producer

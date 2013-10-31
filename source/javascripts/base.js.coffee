@@ -19,13 +19,17 @@ fallbackSVG = () ->
     while i isnt imgs.length
       imgs[i].src = imgs[i].src.slice(0, -3) + "png"  if imgs[i].src.match(dotSVG)
       ++i
+initMap = () ->
+  map = L.mapbox.map('map', 'joshuaogle.map-6z6bwi7l')
+  map.doubleClickZoom.disable()
+  map.scrollWheelZoom.disable()
 
 
 onLoad = () ->
   # Stuff
 
 onChange = () ->
-  map = L.mapbox.map('map', 'joshuaogle.map-6z6bwi7l')
+  initMap()
   fallbackSVG()
 
 
