@@ -1,0 +1,57 @@
+.header-container
+  position: relative
+  z-index: 5
+  height: 75px
+
+.site-header
+  +clearfix()
+  display: block
+  margin: 0
+  overflow: hidden
+  background: white
+  background: rgba(white, 0.96)
+  border-bottom: 1px solid #eaeaea
+  padding: 5px 20px
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  @media only screen and (min-width: $break-medium)
+    position: relative
+    height: 45px
+    padding: 15px 20px
+    &.affix
+      position: fixed
+      z-index: 1000
+      top: 0
+      left: 0
+      right: 0
+  .logo
+    margin: 0
+    float: left
+    a
+      display: block
+      margin: 0 auto
+      height: 45px
+      width: 200px
+      background: image-url("logo-header.svg") no-repeat
+      text-indent: 100%
+      overflow: hidden
+      font-size: 0
+      .no-svg &
+        background-image: image-url("logo-header.png")
+  .site-nav
+    float: right
+    text-align: right
+    ul
+      margin: 0
+    li
+      color: #777
+      display: inline-block
+      margin: 0 0 0 1em
+      line-height: 2.5em
+      a
+        color: #555
+        padding: 0 0.5em
+        &:hover
+          color: lighten(#555, 25%)

@@ -1,12 +1,12 @@
 source 'https://rubygems.org'
 
-gem 'middleman',            '~> 3.1.4'
-gem 'middleman-blog',       '~> 3.3.0'
-gem 'middleman-smusher',    '~> 3.0.0'
-gem 'middleman-livereload', '~> 3.1.0'
-gem 'middleman-gh-pages',   github: 'neo/middleman-gh-pages'
-gem 'middleman-clowncar',   github: 'middleman/middleman-clowncar'
-gem 'turbolinks',           require: false
-gem 'slim',                 '~> 2.0.1'
-gem 'bootstrap-sass',       github: 'thomas-mcdonald/bootstrap-sass', branch: '3'
+gem 'bourbon',                      '~> 3.1.8'            # Sass mixins gem
+gem 'jquery-middleman',             '~> 3.0.4'            # jQuery yo
+gem 'middleman',                    '~> 3.1.4'
+gem 'middleman-blog',               '~> 3.3.0'
+gem 'middleman-livereload',         '~> 3.1.0'
+gem 'middleman-smusher',            '~> 3.0.0'
+gem 'modernizr-rails',              require: false        # Feature detection library for HTML/CSS
+gem 'slim',                         '~> 2.0.1'
+gem 'turbolinks',                   require: false
 

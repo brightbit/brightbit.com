@@ -1,7 +1,24 @@
-- content_for :title do
-  .brand Brightbit
-  h1 Craft the Future
-  h2 We're a team of developers creating the next generation of web and mobile apps. We help entrepeneurs and startups build a solid foundation for their business.
+---
+layout: "base"
+---
 
-.bottom
-  = mail_to "hello@brightbit.com", "Get in touch", class: "btn-outline"
+.page-top
+  .intro.container
+    h1 Craft the Future
+    p We're a team of developers creating the next generation of web and mobile apps. We help entrepeneurs and startups build a solid foundation for their business.
+
+= partial "shared/header"
+
+section.section-features
+  ul.list-simple
+    li.animate
+      .illustration= image_tag "report.svg", class: "svg animate"
+      .description
+        h2 How can we help?
+        p Every Sounding Board consultation comes with a written report outlining your business idea's strengths and weaknesses. We identify your potential competitors and how to differentiate your product. You will have a roadmap with key features identified for a successful minimum viable product.
+
+//
+  section.section-ready
+    = link_to "Ready? Let's talk", timeslots_path, class: "btn btn-outline"
+
+= partial "shared/footer"

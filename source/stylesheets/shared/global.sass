@@ -1,0 +1,346 @@
+body, html
+  height: 100%
+  margin: 0
+  padding: 0
+  background-color: $body-bg
+  color: $text-color
+  font-size: 1em
+  cursor: default
+  @media only screen and (max-width: $break-small)
+    font-size: .9em
+
+.container
+  @extend .clearfix
+  clear: both
+  overflow: hidden
+  margin: 0 auto
+  padding-left: 20px
+  padding-right: 20px
+  max-width: 1200px
+
+section
+  @extend .container
+  +clearfix()
+  overflow: visible
+  margin: 4em auto 8em
+
+  section:last-child
+    margin-bottom: 0
+
+.section-title
+  margin: 0 0 1em
+  font-size: 2em
+  font-weight: 200
+  text-align: center
+
+.section-subtitle
+  margin: -1em 0 2em
+  font-size: 1.25em
+  color: #aaa
+  text-align: center
+
+ul
+  margin: 0 0 1em .5em
+  padding: 0
+  list-style: inside disc
+  li
+    margin-bottom: .5em
+
+.list-simple
+  margin: 0
+  list-style-type: none
+  li
+    margin: 0
+
+.list-inline li
+  display: inline-block
+  list-style: none
+
+.panel
+  border-radius: 5px
+  padding: 3em 20px
+  overflow: hidden
+  background: #fff
+  +box-shadow(0 3px 5px rgba(0, 0, 0, 0.15))
+
+
+// Table
+.table
+  width: 100%
+  margin: 0 1em 2em 0
+  td, th, .td, .th
+    padding: 8px
+    vertical-align: top
+    border: 1px solid #ddd
+  thead td, .thead .td
+    text-align: center
+    text-transform: uppercase
+    font-size: .75em
+    line-height: 1em
+    font-weight: 700
+    color: #777
+    background: #EEE
+
+
+@media only screen and (max-width: $break-medium)
+  table, thead, tbody, tr, th, td
+    display: block
+  thead td
+    position: absolute
+    left: -9999px
+
+
+.table-header
+  position: relative
+  z-index: 2
+  min-height: 1em
+  margin-bottom: -2px
+  border-top-left-radius: 5px
+  border-top-right-radius: 5px
+  padding: .5em 0 .75em
+  background: #47525a
+  color: #fff
+  font-weight: 300
+  font-size: 1.5em
+  text-align: center
+  a
+    float: left
+    color: white
+    padding: 0 10px
+    &:last-child
+      float: right
+
+.table-bordered
+  background: white
+  border: 1px solid #ccc
+  border-collapse: collapse
+  +box-shadow(0 3px 5px #eee)
+  td:first-child, .td:first-child
+    border-left: none
+
+
+
+/* Forms
+form
+  @extend .panel
+  margin-bottom: 20px
+
+#{$all-text-inputs}
+  height: 20px
+  width: 250px
+  max-width: 100%
+  border: 1px solid #ddd
+  border-radius: 3px
+  padding: 4px 6px
+  background: white
+  font-size: .8em
+  line-height: 1.2em
+  color: #555
+  +box-shadow(inset 0 1px 1px rgba(black,0.075))
+  .error &
+    margin-bottom: 10px
+
+.control-group
+  margin-bottom: 20px
+
+.control-label
+  float: left
+  width: 160px
+  padding-top: 5px
+  text-align: right
+  text-transform: uppercase
+  color: #CCC
+  font-size: .7em
+  line-height: 2em
+
+.controls
+  position: relative
+  z-index: 1
+  margin-left: 180px
+
+.controls-text
+  line-height: 20px
+  padding-top: 5px
+  margin-bottom: 5px
+
+.help-block
+  @extend small
+
+.help-inline
+  position: absolute
+  z-index: 2
+  top: 2em
+  left: 10px
+  padding: 0 5px
+  background: $red
+  color: white
+  font-size: .8em
+  line-height: 1.5em
+  white-space: nowrap
+  border-radius: 3px
+  &:before
+    content: ""
+    position: absolute
+    z-index: 2
+    top: -9px
+    left: 1em
+    display: block
+    height: 0
+    width: 0
+    border: 5px solid transparent
+    border-bottom-color: $red
+
+.form-actions
+  clear: both
+  margin: 3em 0 0
+  border-top: 1px solid #eee
+  padding: 19px 20px 20px 180px
+  background: none
+  .btn
+    margin-right: 1em
+  @media only screen and (max-width: $break-small)
+    .btn-text
+      clear: both
+      padding: 10px 0 0
+      line-height: 1.35em
+
+.form-back
+  @extend small
+  float: right
+
+.alert
+  border: 1px solid $red
+  padding: 0 20px
+  color: $red
+  margin-bottom: 2em
+  .close
+    float: right
+    margin-top: 1em
+    border: none
+    background: none
+    color: $red
+    font-size: 1em
+    font-weight: 500
+    cursor: pointer
+  h4
+    margin-top: 1em
+
+@media only screen and (max-width: $break-small)
+  .controls
+    margin-left: 110px
+  .control-label
+    width: 100px
+  .form-actions
+    padding-left: 110px
+
+
+aside
+  margin-top: 4.5em
+  background: #eee
+  +box-shadow(1px 1px #fff)
+  padding: 1em
+  line-height: 1.5em
+  section
+    padding-bottom: 0
+    border-bottom: 0
+    margin-bottom: 2em
+
+/* Typography
+html, body, p, ul, ol, li, dl, dt, dd, blockquote, q, address
+  +sans-serif
+
+h1, h2, h3, h4, h5, h6
+  font-weight: 300
+  margin-bottom: .5em
+
+h2
+  font-size: 2rem
+  line-height: 1em
+
+h3
+  font-size: 1.5rem
+  line-height: 1em
+
+h4
+  font-size: 1.25rem
+  line-height: 1em
+
+a
+  text-decoration: none
+  color: $link-color
+  +transition(all, 200ms)
+  &:hover
+    text-decoration: none
+    color: lighten($link-color, 10%)
+
+small
+  color: #aaa
+  font-size: .8em
+
+
+
+/* Helpers */
+.clear
+  clear: both
+
+.f-left
+  float: left
+  clear: none
+
+.f-right
+  float: right
+  clear: none
+
+.hide
+  display: none
+
+.half
+  @media only screen and (min-width: $break-medium)
+    float: left
+    width: 50%
+
+mark
+  padding: 0 .25em
+  text-shadow: none
+  color: #fff
+  background: rgba(darken($link-color, 50%), 0.15)
+  +box-shadow(1px 1px rgba(255, 255, 255, 0.15))
+
+.btn
+  display: inline-block
+  margin: 0
+  padding: .75em 2em .65em
+  border: none
+  border-radius: 5px
+  background: white
+  background-repeat: repeat-x
+  font-size: .75em
+  line-height: 2em
+  text-transform: uppercase
+  text-shadow: none
+  color: $link-color
+  &:hover
+    color: lighten($link-color, 10%)
+  &.btn-primary
+    border: none
+    background: $link-color
+    color: #fff
+    text-shadow: none
+    &:hover
+      background: lighten($link-color, 2%)
+
+.btn-large
+  font-size: 1em
+  line-height: 1em
+  padding: 1em
+
+.btn-outline
+  background: none
+  border: 2px solid $link-color
+  color: $link-color
+
+.btn-text
+  padding: .75em 2em .65em
+  font-size: .75em
+  line-height: 2em
+  color: #aaa

@@ -1,0 +1,11 @@
+doctype 5
+html
+  head= partial "shared/head"
+
+  body class=page_classes
+    .wrapper
+      = partial "shared/header"
+      .container= yield
+    = partial "shared/footer"
+
+  = partial "shared/tracking"
