@@ -1,0 +1,44 @@
+.work-image
+  position: relative
+  z-index: 1
+  margin: 0 auto
+  text-align: center
+  background: no-repeat
+
+.glare
+  content: ""
+  position: absolute
+  z-index: 2
+  width: 135px
+  height: 361px
+  display: block
+  background: image-url("work/glare.png") no-repeat
+
+.work-desktop
+  width: 655px
+  height: 545px
+  background-image: image-url("work/desktop-frame.png")
+  padding: 20px 0
+  img
+    width: 620px
+    height: 400px
+
+.work-iphone, .work-mobileweb
+  width: 320px
+  height: 520px
+  background-image: image-url("work/iphone-frame.png")
+  padding: 127px 35px
+  &:after
+    @extend .glare
+    top: 126px
+    right: 33px
+
+.work-android
+  width: 360px
+  height: 750px
+  background-image: image-url("work/android-frame.png")
+  padding: 117px 39px
+  &:after
+    @extend .glare
+    top: 116px
+    right: 37px

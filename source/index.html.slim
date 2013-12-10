@@ -5,20 +5,39 @@ layout: "base"
 .page-top
   .intro.container
     h1 Craft the Future
-    p We're a team of developers creating the next generation of web and mobile apps. We help entrepeneurs and startups build a solid foundation for their business.
+    p We're a team of developers creating the next generation of web and mobile apps. We can help you bring your idea to life.
+    p= link_to "Get in touch", "/contact", class: "btn btn-outline"
 
 = partial "shared/header"
 
-section.section-features
+section.section-about
+  h2.section-title We help entrepeneurs &amp; startups build a solid foundation
   ul.list-simple
     li.animate
-      .illustration= image_tag "report.svg", class: "svg animate"
+      .illustration= image_tag "design.svg", class: "svg animate"
       .description
-        h2 How can we help?
-        p Every Sounding Board consultation comes with a written report outlining your business idea's strengths and weaknesses. We identify your potential competitors and how to differentiate your product. You will have a roadmap with key features identified for a successful minimum viable product.
+        h2 Experience Design
+        p Your app is more than zeros and ones.
+    li.animate
+      .illustration= image_tag "development.svg", class: "svg animate"
+      .description
+        h2 Application Development
+        p Blah
+    li.animate
+      .illustration= image_tag "operations.svg", class: "svg animate"
+      .description
+        h2 Project Production
+        p Blah
 
-//
-  section.section-ready
-    = link_to "Ready? Let's talk", timeslots_path, class: "btn btn-outline"
+section.section-who
+  h2.section-title Who are we?
+
+section.section-testimonial
+  quote
+    p "Brightbit is one of the best one-two combos in the industry. If you are looking for design and development under one roof, they deliver every time!"
+    p.author Matt Zuvella, SportsVault
+
+section.section-clients
+  h2.section-title Some of the fine folks we've worked with
 
 = partial "shared/footer"
