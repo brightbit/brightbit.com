@@ -1,0 +1,18 @@
+---
+blog: 'articles'
+---
+
+h1.title Articles
+
+- if page_articles.any?
+  - page_articles.group_by {|a| a.date.year }.each do |year, articles|
+    section
+      .section-title= year
+      - articles.each_with_index do |article, i|
+        article
+          h2= link_to article.title, article
+          time= article.date.strftime('%b %e')
+- else
+  section
+    .section-title Articles
+    p Sorry, no articles yet

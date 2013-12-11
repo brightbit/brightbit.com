@@ -10,7 +10,7 @@ body, html
     font-size: .9em
 
 .container
-  @extend .clearfix
+  +clearfix()
   clear: both
   overflow: hidden
   margin: 0 auto
@@ -20,7 +20,6 @@ body, html
 
 section
   @extend .container
-  +clearfix()
   overflow: visible
   margin: 4em auto 8em
 

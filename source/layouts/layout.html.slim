@@ -1,11 +1,6 @@
-doctype 5
-html
-  head= partial "shared/head"
-
-  body class=page_classes
-    .wrapper
-      = partial "shared/header"
-      .container= yield
-    = partial "shared/footer"
-
-  = partial "shared/tracking"
+- wrap_layout :base do
+  .wrapper
+    = partial "shared/header"
+    .container= yield
+    .footer-push
+  = partial "shared/footer"
