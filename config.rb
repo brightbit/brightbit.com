@@ -1,3 +1,6 @@
+set :markdown_engine, :kramdown
+activate :syntax, :line_numbers => true
+
 Time.zone = "UTC"
 
 page "/feed.xml", :layout => false

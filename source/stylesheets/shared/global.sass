@@ -67,6 +67,28 @@ ul
   background: #fff
   +box-shadow(0 3px 5px rgba(0, 0, 0, 0.15))
 
+.top
+  position: relative
+  z-index: 1
+  overflow: hidden
+  height: 300px
+  background: $orange center center
+  background-size: cover
+  color: #fff
+  .top-title
+    @extend .container
+    position: relative
+    z-index: 2
+    max-width: 800px
+    height: 300px
+    font-size: 1.5em
+    +box(vertical, center)
+    .no-flexbox &
+      padding-top: 20%
+    *:last-child
+      margin-bottom: 0
+
+
 
 // Table
 .table
@@ -310,9 +332,8 @@ small
 mark
   padding: 0 .25em
   text-shadow: none
-  color: #fff
-  background: rgba(darken($link-color, 50%), 0.15)
-  +box-shadow(1px 1px rgba(255, 255, 255, 0.15))
+  background: $highlight
+  +box-shadow((0.25em 0 0 $highlight, -0.25em 0 0 $highlight))
 
 .btn
   display: inline-block

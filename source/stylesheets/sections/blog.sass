@@ -1,0 +1,47 @@
+.blog
+  article
+    padding: 5em 0
+    text-align: center
+    border-bottom: 1px solid #ddd
+    &:last-child
+      border-bottom: none
+    p
+      font-size: 1.2em
+
+body.news
+  .top
+    background-color: $blue
+    background-image: image-url("top/news.jpg")
+
+body.articles
+  .top
+    background-color: $green
+    background-image: image-url("top/articles.jpg")
+
+.post-title
+  @extend .section-title
+  margin: 0 0 0.5em
+
+.post-meta
+  margin: 0
+  text-align: center
+  li
+    color: #aaa
+    font-weight: 300
+    &:after
+      content: "•"
+      padding: 0 1em
+      font-size: 75%
+      color: #ddd
+    &:last-child:after
+      content: none
+
+.post
+  max-width: 800px
+  margin: 5em auto 0
+  .post-meta
+    margin-bottom: 2em
+    border-bottom: 1px solid #ddd
+  h2, h3, h4
+    font-size: 1.5em
+    margin-top: 2em

@@ -3,6 +3,7 @@ title: Jonathan Camenisch Joins Brightbit
 date: 2013-02-11
 author: Vance Lucas
 tags: Staff
+summary: We welcome Jonathan Camenisch to the Brightbit team as our first developer/programmer hire.
 ---
 
 We welcome Jonathan Camenisch to the Brightbit team as our first

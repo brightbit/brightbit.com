@@ -77,6 +77,9 @@ GEM
       sprockets (~> 2.1)
       sprockets-helpers (~> 1.0.0)
       sprockets-sass (~> 1.0.0)
+    middleman-syntax (1.2.1)
+      middleman-core (~> 3.0)
+      rouge (~> 0.3.0)
     modernizr-rails (2.7.0)
     multi_json (1.8.0)
     rack (1.5.2)
@@ -90,6 +93,8 @@ GEM
       ffi (>= 0.5.0)
     rb-kqueue (0.2.0)
       ffi (>= 0.5.0)
+    rouge (0.3.10)
+      thor
     sass (3.2.11)
     slim (2.0.1)
       temple (~> 0.6.6)
@@ -127,6 +132,7 @@ DEPENDENCIES
   middleman-blog (~> 3.3.0)
   middleman-livereload (~> 3.1.0)
   middleman-smusher (~> 3.0.0)
+  middleman-syntax (~> 1.2.1)
   modernizr-rails
   slim (~> 2.0.1)
   turbolinks

@@ -1,31 +1,19 @@
 body.index
 
-  .page-top
-    position: relative
-    z-index: 1
-    overflow: hidden
+  .top
     height: 100%
-    background: mix($orange, #c55d40) image-url("home-top.jpg") center center
-    background-size: cover
-    color: #fff
-    font-size: 1.5em
-
-  .intro
-    position: relative
-    z-index: 2
-    max-width: 800px
-    height: 100%
-    +box(vertical, center)
-    .no-flexbox &
-      padding-top: 20%
-    .btn
-      margin-top: 1em
-      font-size: .6em
-      color: white
-      border-color: white
-      border-color: rgba(white, 0.6)
-      &:hover
+    background-color: mix($orange, #c55d40)
+    background-image: image-url("top/home.jpg")
+    .top-title
+      height: 100%
+      .btn
+        margin-top: 1em
+        font-size: .6em
+        color: white
         border-color: white
+        border-color: rgba(white, 0.6)
+        &:hover
+          border-color: white
 
   .header-container
     position: relative

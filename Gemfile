@@ -6,6 +6,7 @@ gem 'middleman',                    '~> 3.1.4'
 gem 'middleman-blog',               '~> 3.3.0'
 gem 'middleman-livereload',         '~> 3.1.0'
 gem 'middleman-smusher',            '~> 3.0.0'
+gem 'middleman-syntax',             '~> 1.2.1'
 gem 'modernizr-rails',              require: false        # Feature detection library for HTML/CSS
 gem 'slim',                         '~> 2.0.1'
 gem 'turbolinks',                   require: false

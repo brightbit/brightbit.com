@@ -1,2 +1,7 @@
 - wrap_layout :layout do
-  article= yield
+  article.post
+    h1.post-title= current_page.title
+    ul.list-inline.post-meta
+      li= current_page.data.author
+      li= current_page.date.strftime('%b %e, %Y')
+    = yield

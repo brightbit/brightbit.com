@@ -3,6 +3,7 @@ title: Matt Blackwell Joins Brightbit
 date: 2012-09-18
 author: Vance Lucas
 tags: Staff
+summary: We would like to welcome Matt Blackwell to the Brightbit team as our new Sales and Business Operations Manager.
 ---
 
 We would like to welcome Matt Blackwell to the Brightbit team as our new
