@@ -1,6 +1,9 @@
 .header-container
   header.site-header
-    h1.logo= link_to 'Brightbit Apps', "/"
+    = link_to "/", class: "logo" do
+      h1 Brightbit Apps
+      = inline_svg "logo-header.svg"
+      = image_tag "logo-header.png"
     nav.site-nav
       ul.list-inline
         li= link_to "Our Work", "/work"

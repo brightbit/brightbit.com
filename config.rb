@@ -11,7 +11,8 @@ set :images_dir, 'images'
 
 activate :directory_indexes
 
-
+require "lib/inline_svg"
+helpers InlineSVG
 
 configure :build do
   # activate :minify_css

@@ -6,16 +6,14 @@ blog: 'articles'
   h1 Articles
   p Equal parts useful information and all out geekery
 
-.blog
+.blog-index
   - if page_articles.any?
     - page_articles.each_with_index do |article, i|
-        article
+        article.post
           h2.post-title= link_to article.title, article
           - if article.data.summary
             p= article.data.summary
-          ul.list-inline.post-meta
-            li= article.data.author
-            li= article.date.strftime('%b %e, %Y')
+          p.post-meta Posted by #{article.data.author} on #{article.date.strftime('%b %e, %Y')}
   - else
     section
       .section-title Articles

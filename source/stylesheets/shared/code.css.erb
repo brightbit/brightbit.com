@@ -4,10 +4,23 @@ code {
   padding: 0 0.5em;
   border: 1px solid #ddd;
   border-radius: 3px;
+  background: white;
+  font-size: .8em;
 }
+
 .highlight {
+  position: relative;
+  z-index: 1;
   border: 1px solid #ddd;
   border-radius: 3px;
+  background: white;
+  overflow: scroll;
+  font-size: .8em;
+  line-height: 1.5em;
+}
+
+.highlight:after {
+  position: absolute;
 }
 
 .highlight .gutter {

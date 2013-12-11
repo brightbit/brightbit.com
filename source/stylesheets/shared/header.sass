@@ -29,17 +29,19 @@
   .logo
     margin: 0
     float: left
-    a
-      display: block
-      margin: 0 auto
-      height: 45px
-      width: 200px
-      background: image-url("logo-header.svg") no-repeat
+    h1
       text-indent: 100%
       overflow: hidden
       font-size: 0
+      margin: 0
+    svg, img
+      display: none
+    svg
+      .svg &
+        display: block
+    img
       .no-svg &
-        background-image: image-url("logo-header.png")
+        display: block
   .site-nav
     float: right
     text-align: right
