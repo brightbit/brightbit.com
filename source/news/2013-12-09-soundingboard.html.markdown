@@ -6,6 +6,7 @@ author: Vance Lucas
 comments: false
 categories: [Launch, Products, SoundingBoard]
 summary: Ever have an idea for an app, and don't know who to talk to about it?
+link: ["Visit Sounding Board", "http://soundingboard.tv"]
 banner: "/images/posts/soundingboard-launch.jpg"
 color: "#f26e7d"
 ---

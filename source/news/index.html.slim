@@ -2,10 +2,8 @@
 blog: 'news'
 ---
 
-- content_for :top do
-  h1 Brightbit News
-
-.blog-index
+section.blog-index
+  h1.section-title Brightbit News
   - if page_articles.any?
     - page_articles.each_with_index do |article, i|
         article.post

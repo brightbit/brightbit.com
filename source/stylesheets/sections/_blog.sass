@@ -7,6 +7,13 @@
   @extend small
   margin: 0.5em 0 0
   text-align: center
+  font-size: .75em
+
+.post-link
+  margin-top: 2em
+  text-align: center
+  .btn
+    font-size: .75em
 
 .post
   max-width: 800px
@@ -19,6 +26,8 @@
     font-size: 1.35em
     line-height: 1.35em
     font-weight: 300
+    &.post-meta
+      font-size: 1em
   h2, h3, h4
     margin-top: 2em
 
@@ -33,24 +42,11 @@
     text-align: center
     &:last-child
       border-bottom: none
+    .post-title
+      margin-bottom: 0.25em
     .post-meta
       padding: 0
       border: 0
       margin: 0
   h2, h3, h4
     margin-top: 0
-
-body.news_index
-  .top
-    background-color: $blue
-    background-image: image-url("top/news.jpg")
-  .site-header .logo svg path.icon
-    fill: $blue
-
-body.articles_index
-  .top
-    background-color: $green
-    background-image: image-url("top/articles.jpg")
-  .site-header .logo svg path.icon
-    fill: $green
-
