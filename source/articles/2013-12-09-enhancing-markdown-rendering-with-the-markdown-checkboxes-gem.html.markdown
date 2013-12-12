@@ -1,7 +1,9 @@
 ---
 title: Enhancing Markdown Rendering with the markdown_checkboxes Gem
 date: 2013-12-09
+author: Aaron Krauss
 tags: Ruby on Rails, RubyGems, Markdown, Checkbox
+color: "#444"
 ---
 
 You might have heard of Markdown before; you know, the hip way
@@ -62,13 +64,14 @@ The gem comes with 2 dependencies (both of which are automatically installed):
 
 Now, let's open up a sample file and build our bare-bones renderer:
 
-{% codeblock lib/markdown_test.rb %}
+<div class="code-title">lib/markdown_test.rb</div>
+```ruby
 require 'markdown_checkboxes'
 
 class MarkdownHelper
   MARKDOWN = CheckboxMarkdown.new(Redcarpet::Render::HTML.new())
 end
-{% endcodeblock %}
+```
 
 The CheckboxMarkdown class inherits directly from Redcarpet::Markdown, and therefore you can pass
 in any of the options on Redcarpet's [readme](https://github.com/vmg/redcarpet) page. This is enough
@@ -76,7 +79,8 @@ to get us started though, so let's keep going.
 
 Why don't we add some text that we want our markdown renderer to parse and display:
 
-{% codeblock lib/markdown_test.rb %}
+<div class="code-title">lib/markdown_test.rb</div>
+```ruby
 require 'markdown_checkboxes'
 
 class MarkdownHelper
@@ -95,7 +99,7 @@ end
 
   Markdown.render(sample_text).html_safe
 end
-{% endcodeblock %}
+```
 
 To build our sample text, we use a [ruby heredoc](http://rubyquicktips.com/post/4438542511/heredoc-and-indent) to
 buid a clean multi-line string. This text will get fully rendered out as beautiful html in a web browser, but you'll
@@ -123,7 +127,8 @@ Putting it All Together
 In order to get those checkboxes above working properly, you need to pass in a little extra
 data to the CheckboxMarkdown#render method:
 
-{% codeblock lib/markdown_test.rb %}
+<div class="code-title">lib/markdown_test.rb</div>
+```ruby
 require 'markdown_checkboxes'
 
 class MarkdownHelper
@@ -146,7 +151,7 @@ end
     data.url    = post_path(@post, post: { body: updated_text })
   end.html_safe
 end
-{% endcodeblock %}
+```
 
 
 That doesn't look so bad, does it? The checkbox_markdown gem ships with its own DSL

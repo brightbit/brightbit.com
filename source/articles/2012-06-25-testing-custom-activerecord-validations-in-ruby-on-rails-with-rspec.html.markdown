@@ -25,7 +25,7 @@ This is the easy part. Add your custom validator like normal to the
 model you want to put it on using the `validate` method.
 
 <div class="code-title">models/booking.rb</div>
-~~~ ruby
+```ruby
 class Booking < ActiveRecord::Base
   belongs_to :listing
 
@@ -40,7 +40,7 @@ class Booking < ActiveRecord::Base
     end
   end
 end
-~~~
+```
 
 Note we are using the symbol `:not_available` instead of an actual error
 message string. This is because the text of this error message will be
@@ -62,7 +62,7 @@ your target language in the same location like `de.yml`).
 Full locale example with YAML indentation for both errors above:
 
 <div class="code-title">config/locales/en.yml</div>
-~~~ yml
+```yml
 en:
   activerecord:
     errors:
@@ -73,7 +73,7 @@ en:
               not_available:  'Listing is not available for specified date range'
             check_in:
               before: 'must be before check out'
-~~~
+```
 
 Accessing the Translation Strings in Your App
 ---------------------------------------------
@@ -105,8 +105,8 @@ Now we need to make a test to ensure that our new custom validation is
 working properly. We use [RSpec](https://github.com/rspec/rspec-rails) for writing & running tests, and
 [FactoryGirl](https://github.com/thoughtbot/factory_girl) for creating our test objects, which are both available as gems.
 
-<div class="code-title">sepc/models/booking_spec.rb</div>
-~~~ ruby
+<div class="code-title">spec/models/booking_spec.rb</div>
+```ruby
 describe "my custom validation"
   it "will not create a booking that overlaps another accepted booking in date range" do
     # We have previously setup a booking in this date range in our test fixtures, so this will error
@@ -118,7 +118,7 @@ describe "my custom validation"
     booking.errors[:base].should include I18n.t('activerecord.errors.models.booking.attributes.base.not_available')
   end
 end
-~~~
+```
 
 Run Your RSpec Tests
 --------------------
