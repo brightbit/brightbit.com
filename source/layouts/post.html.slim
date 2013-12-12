@@ -1,5 +1,9 @@
 - wrap_layout :layout do
-  article.post
+  - content_for :top do
     h1.post-title= current_page.title
+
+  article.post
     p.post-meta Posted by #{current_page.data.author} on #{current_page.date.strftime('%b %e, %Y')}
     = yield
+    css:
+      .site-header .logo svg path.icon { fill: #{current_page.data.color}; }

@@ -3,6 +3,7 @@ title: Testing Custom Validations in Ruby on Rails with RSpec
 date: 2012-06-25
 tags: Ruby on Rails, ActiveRecord, RSpec, Testing
 author: Vance Lucas
+color: "#c52f24"
 ---
 
 Often on a project, you will have some custom business logic that
