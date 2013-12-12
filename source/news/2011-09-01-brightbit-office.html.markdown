@@ -2,6 +2,8 @@
 title: Brightbit Office
 author: Vance Lucas
 date: 2011-09-01
+color: "#5d7c90"
+banner: "/images/posts/brightbit-office.png"
 ---
 
 [Brightbit](http://brightb.it) has been a company since 2010 for all of us (Vance, Eric, and Joshua) to work on our own projects together (like [Kikuchat](http://kikuchat.com) and [Keynot.es](http://keynot.es)), but now that half of 2011 has elapsed, we have made the leap and are now officially all fulltime self-employed partners in Brightbit. We are taking client work doing web sites, web applications, mobile applications, REST APIs, and basically anything interactive that has to do with the internet.

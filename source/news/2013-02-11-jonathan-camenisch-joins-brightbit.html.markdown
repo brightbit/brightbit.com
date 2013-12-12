@@ -4,6 +4,8 @@ date: 2013-02-11
 author: Vance Lucas
 tags: Staff
 summary: We welcome Jonathan Camenisch to the Brightbit team as our first developer/programmer hire.
+color: "#b73a26"
+banner: "/images/posts/staff-jonathan-camenisch.png"
 ---
 
 We welcome Jonathan Camenisch to the Brightbit team as our first

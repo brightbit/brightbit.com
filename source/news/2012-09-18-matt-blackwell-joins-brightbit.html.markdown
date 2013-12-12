@@ -4,6 +4,8 @@ date: 2012-09-18
 author: Vance Lucas
 tags: Staff
 summary: We would like to welcome Matt Blackwell to the Brightbit team as our new Sales and Business Operations Manager.
+color: "#b73a26"
+banner: "/images/posts/staff-matt-blackwell.png"
 ---
 
 We would like to welcome Matt Blackwell to the Brightbit team as our new
