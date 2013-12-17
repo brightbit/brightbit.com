@@ -9,13 +9,14 @@
   margin: 0
   overflow: hidden
   background: white
-  background: rgba(white, 0.96)
+  background: rgba(white, 0.95)
   border-bottom: 1px solid #eaeaea
   padding: 5px 20px
   position: fixed
   top: 0
   left: 0
   right: 0
+  +transition(all, 500ms)
   @media only screen and (min-width: $break-medium)
     position: relative
     height: 45px
@@ -26,6 +27,7 @@
       top: 0
       left: 0
       right: 0
+      box-shadow: 0 0 5px rgba(black, 0.35)
   .logo
     margin: 0
     float: left
