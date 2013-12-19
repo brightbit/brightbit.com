@@ -1,7 +1,13 @@
+---
+banner: "/images/top/team.jpg"
+---
+
+- content_for :top do
+  h1 Meet the Team
+  p We're a close team of experienced product developers working to make the web a better place to live.
+
 body.team
   section.section-team
-    h2.section-title Meet The Team
-    p.section-subtitle We're a close team of experienced product developers working to make the web a better place to live.
     .team-list
         .team-person
           = image_tag "team/team_vancelucas.png"
@@ -60,6 +66,8 @@ body.team
             p.team-social
               = link_to "Twitter", "http://twitter.com/thecodeboss", class: "ss-social-icon"
               = link_to "Octocat", "http://github.com/alkrauss48", class: "ss-social-icon"
+
+    section.post-link= link_to "See the amazing work we do", "/work", class: "btn btn-outline"
 //
   section.section-offices
     h2.section-title Our Offices

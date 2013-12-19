@@ -1,4 +1,8 @@
 - if content_for?(:top)
-  - banner = current_page.data.color ? "background:#{current_page.data.color} url('#{current_page.data.banner}') center center; background-size:cover;" : false
+  - color = current_page.data.color || "#f49200"
+  - banner = "background:#{color} url('#{current_page.data.banner}') center center; background-size:cover;"
   .top style="#{banner}"
-    .top-title= yield_content :top
+    .top-title
+      = yield_content :top
+  css:
+    .site-header .logo svg path.icon { fill: #{current_page.data.color}; }
