@@ -2053,7 +2053,7 @@ footer {
 body.index .top {
   height: 100%;
   background-color: #dc7720;
-  background-image: url("/images/top/home.jpg?1387495098"); }
+  background-image: url("/images/top/home.jpg?1387497330"); }
   /* line 17, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
   body.index .top .top-title {
     height: 100%; }
@@ -2196,7 +2196,7 @@ body.index .clients {
       margin-top: 8px;
       line-height: 70px;
       vertical-align: middle;
-      background: url("/images/clients/guestdoor.png?1387494997") no-repeat; }
+      background: url("/images/clients/guestdoor.png?1387497233") no-repeat; }
       /* line 8, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
       body.index .clients .client-logo.client-guestdoor:hover {
         background-position: 0 -60px; }
@@ -2207,7 +2207,7 @@ body.index .clients {
       margin-top: 0px;
       line-height: 70px;
       vertical-align: middle;
-      background: url("/images/clients/lifechurch.png?1387494998") no-repeat; }
+      background: url("/images/clients/lifechurch.png?1387497234") no-repeat; }
       /* line 8, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
       body.index .clients .client-logo.client-lifechurch:hover {
         background-position: 0 -69px; }
@@ -2218,7 +2218,7 @@ body.index .clients {
       margin-top: 5px;
       line-height: 70px;
       vertical-align: middle;
-      background: url("/images/clients/saxum.png?1387494999") no-repeat; }
+      background: url("/images/clients/saxum.png?1387497235") no-repeat; }
       /* line 8, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
       body.index .clients .client-logo.client-saxum:hover {
         background-position: 0 -65px; }
@@ -2229,7 +2229,7 @@ body.index .clients {
       margin-top: 0px;
       line-height: 70px;
       vertical-align: middle;
-      background: url("/images/clients/sportsvault.png?1387495000") no-repeat; }
+      background: url("/images/clients/sportsvault.png?1387497236") no-repeat; }
       /* line 8, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
       body.index .clients .client-logo.client-sportsvault:hover {
         background-position: 0 -39px; }
@@ -2238,7 +2238,7 @@ body.index .clients {
     max-width: none;
     padding-top: 5em;
     padding-bottom: 5em;
-    background: #333333 url("/images/testimonial-background.jpg?1387495093") center center no-repeat;
+    background: #333333 url("/images/testimonial-background.jpg?1387497326") center center no-repeat;
     background-size: cover;
     background-attachment: fixed;
     color: white; }
@@ -2319,13 +2319,13 @@ body.team .section-offices {
   width: 135px;
   height: 361px;
   display: block;
-  background: url("/images/work/glare.png?1387495074") no-repeat; }
+  background: url("/images/work/glare.png?1387497306") no-repeat; }
 
 /* line 17, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_work.sass */
 .work-desktop {
   width: 655px;
   height: 545px;
-  background-image: url("/images/work/desktop-frame.png?1387495069");
+  background-image: url("/images/work/desktop-frame.png?1387497301");
   padding: 20px 0; }
   /* line 22, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_work.sass */
   .work-desktop img {
