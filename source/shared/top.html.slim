@@ -1,4 +1,0 @@
-- if content_for?(:top)
-  - banner = current_page.data.color ? "background:#{current_page.data.color} url('#{current_page.data.banner}') center center; background-size:cover;" : false
-  .top style="#{banner}"
-    .top-title= yield_content :top
