@@ -21,8 +21,6 @@ configure :build do
   # activate :minify_javascript
   activate :cache_buster
   # activate :relative_assets
-  require "middleman-smusher"
-  activate :smusher
 end
 
 
