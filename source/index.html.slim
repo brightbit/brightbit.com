@@ -26,26 +26,34 @@ section.section-about
     li.animate
       .illustration= image_tag "operations.svg", class: "svg animate"
       .description
+<<<<<<< Updated upstream
         h2 Product Strategy
         p  Every great launch needs the right trajectory and speed. Close communication, research and planning help your idea take off.
 
 section.section-who
   h2.section-title Our Focus
   p.section-subtitle Blah blah blah blah
+=======
+        h2 Product Management
+        p  Every product launch needs the right trajectory and speed. Close communication, research and planning help your idea take off on budget.
+>>>>>>> Stashed changes
 
-section.section-testimonial
-  quote
-    p "Brightbit is one of the best one-two combos in the industry. If you are looking for design and development under one roof, they deliver every time!"
-    p.author Matt Zuvella, SportsVault
+.clients
+  .testimonial
+    quote
+      p "Brightbit is one of the best one-two combos in the industry. If you are looking for design and development under one roof, they deliver every time!"
+      p.author Matt Zuvella, SportsVault
+  section.section-clients
+    h2.section-title Some of the fine folks we've worked with
+    ul.list-simple.list-inline
+      li.client-logo.client-baton Baton
+      li.client-logo.client-cmr CMR
+      li.client-logo.client-guestdoor GuestDoor
+      li.client-logo.client-lifechurch LifeChurch
+      li.client-logo.client-saxum Saxum
+      li.client-logo.client-sportsvault SportsVault
 
-section.section-clients
-  h2.section-title Some of the fine folks we've worked with
-  ul.list-simple.list-inline
-    li Baton
-    li CMR
-    li GuestDoor
-    li LifeChurch
-    li Saxum
-    li SportsVault
+section.section-ready
+  = link_to "Ready? Let's talk", "#contact", class: "btn btn-outline"
 
 = partial "shared/footer"

@@ -1,3 +1,13 @@
+=client_logo($path, $height, $width, $top-margin: 0px)
+  height: $height
+  width: $width
+  margin-top: $top-margin
+  line-height: 70px
+  vertical-align: middle
+  background: image-url($path) no-repeat
+  &:hover
+    background-position: 0 (-$height)
+
 body.index
 
   .top
@@ -34,32 +44,90 @@ body.index
       +clearfix()
       float: left
       width: 29%
-      padding: 3em 2%
+      padding: 0 2%
       font-size: 1.25em
       font-weight: 200
       .illustration
         text-align: center
+        .animate
+          opacity: 0
+          +transform(scale(0.1))
+          +transition(all, 500ms)
+          +transition-delay(0.1s)
+          &.animated
+            opacity: 1
+            +transform(scale(1))
+            +animation(grow 0.5s ease 0.1s)
       .description
         h2
           font-size: 1.2em
 
-  .section-testimonial
-    max-width: none
-    background: #333
-    color: white
-    quote
-      display: block
-      max-width: 1200px
-      margin: 0 auto
-      padding: 4em 0
-    p
-      font-size: 1.75em
-      font-weight: 300
+
+  .clients
+    overflow: hidden
+    background: white
+
+    .section-clients
+      position: relative
+      z-index: 1
+      max-width: none
+      margin-top: 3em
+      margin-bottom: 3em
       text-align: center
-      &.author
-        @extend small
-        margin: 0
-        font-size: 1.25em
+      h2
+        margin-bottom: 0.25em
+      &:before
+        position: absolute
+        top: -5em
+        left: 50%
+        margin-left: 1em
+        display: block
+        content: ""
+        height: 0px
+        width: 0px
+        border: 1em solid transparent
+        border-bottom-color: white
+
+    .client-logo
+      display: inline-block
+      margin: 1em 2em
+      overflow: hidden
+      text-indent: 1000%
+      white-space: nowrap
+      &.client-baton
+        +client_logo("clients/baton.jpg", 47px, 135px)
+      &.client-cmr
+        +client_logo("clients/cmr.jpg", 33px, 137px)
+      &.client-guestdoor
+        +client_logo("clients/guestdoor.png", 60px, 184px, 8px)
+      &.client-lifechurch
+        +client_logo("clients/lifechurch.png", 69px, 229px)
+      &.client-saxum
+        +client_logo("clients/saxum.png", 65px, 123px, 5px)
+      &.client-sportsvault
+        +client_logo("clients/sportsvault.png", 39px, 184px)
+
+    .testimonial
+      max-width: none
+      padding-top: 5em
+      padding-bottom: 5em
+      background: #333 image-url("testimonial-background.jpg") center center no-repeat
+      background-size: cover
+      background-attachment: fixed
+      color: white
+      quote
+        display: block
+        max-width: 1200px
+        margin: 0 auto
+        padding: 4em 0
+      p
+        font-size: 1.75em
+        font-weight: 300
+        text-align: center
+        &.author
+          @extend small
+          margin: 0
+          font-size: 1.25em
 
   .section-ready
     font-size: 1.5em

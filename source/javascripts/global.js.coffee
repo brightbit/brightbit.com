@@ -23,7 +23,7 @@ $ ->
         top: $(".site-header").offset().top
 
   replaceSVG = do ->
-    if (!Modernizr.svg or !Modernizr.svgasimg)
+    unless Modernizr.svg
       $("img.svg").each ->
         img = $(this)
         png_src = img.attr("src").replace(".svg", ".png")
