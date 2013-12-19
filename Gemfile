@@ -11,5 +11,12 @@ gem 'middleman-syntax',             '~> 1.2.1'
 gem 'modernizr-rails',              require: false        # Feature detection library for HTML/CSS
 gem 'redcarpet',                    '~> 3.0.0'
 gem 'slim',                         '~> 2.0.1'
+gem 'thin',                         '~> 1.6.1'
 gem 'turbolinks',                   require: false
 
+group :development do
+  gem "heroku"
+  gem "watchr"
+  gem "rb-fsevent"
+  gem "growl_notify"
+end
