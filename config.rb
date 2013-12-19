@@ -33,8 +33,8 @@ activate :blog do |blog|
   blog.layout            = "post"
   blog.permalink         = ":year-:month-:day-:title.html"
   blog.prefix            = "news"
-  blog.tag_template      = "tag.html"
-  blog.taglink           = "tags/:tag.html"
+  #blog.tag_template      = "tag.html"
+  #blog.taglink           = "tags/:tag.html"
   # blog.summary_separator = /(READMORE)/
   # blog.summary_length    = 250
   # blog.per_page          = 5
@@ -46,5 +46,5 @@ activate :blog do |blog|
   blog.layout            = "post"
   blog.permalink         = ":year-:month-:day-:title.html"
   blog.prefix            = "articles"
-  blog.tag_template      = "tag.html"
+  #blog.tag_template      = "tag.html"
 end
