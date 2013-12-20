@@ -8,21 +8,21 @@
 footer
   margin: 0
   padding: 5em 20px
-  background: $text-color
-  color: lighten($text-color, 25%)
+  background: $darkblue
+  color: lighten($darkblue, 25%)
   text-align: center
   line-height: 25px
   a
     margin-right: 1em
-    color: lighten($text-color, 25%)
+    color: lighten($darkblue, 25%)
     &:hover
-      color: lighten($text-color, 50%)
+      color: lighten($darkblue, 50%)
   .brightbit-logo
     display: block
     height: 35px
     width: 35px
     margin: 0 auto
-  @media only screen and (min-width: $break-small)
+  @media only screen and (min-width: $break-medium)
     height: 25px
     .contact-email
       float: left
@@ -31,5 +31,6 @@ footer
       text-align: right
     .brightbit-logo
       margin: -5px auto
-  .site-nav
-    float: left
+    .site-nav
+      float: left
+

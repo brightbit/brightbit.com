@@ -16,6 +16,7 @@ body.index
     background-image: image-url("top/home.jpg")
     .top-title
       height: 100%
+      font-size: 1.5em
       .btn
         margin-top: 1em
         font-size: .6em
@@ -42,11 +43,12 @@ body.index
     overflow: visible
     li
       +clearfix()
-      float: left
-      width: 29%
-      padding: 0 2%
+      padding: 0 2% 1em
       font-size: 1.25em
       font-weight: 200
+      @media only screen and (min-width: $break-small)
+        float: left
+        width: 29%
       .illustration
         text-align: center
         .animate
@@ -72,15 +74,13 @@ body.index
       z-index: 1
       max-width: none
       margin-top: 3em
-      margin-bottom: 3em
+      margin-bottom: 2em
       text-align: center
-      h2
-        margin-bottom: 0.25em
       &:before
         position: absolute
         top: -5em
         left: 50%
-        margin-left: 1em
+        margin: 0.2em 0 0 -1em
         display: block
         content: ""
         height: 0px
@@ -90,7 +90,7 @@ body.index
 
     .client-logo
       display: inline-block
-      margin: 1em 2em
+      margin: 1em 2em 3em
       overflow: hidden
       text-indent: 1000%
       white-space: nowrap

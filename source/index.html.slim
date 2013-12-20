@@ -6,7 +6,6 @@ layout: "base"
   .top-title
     h1 Craft the Future
     p We're a team of developers creating the next generation of web and mobile apps. We can help you bring your idea to life.
-    p= link_to "Get in touch", "/contact", class: "btn btn-outline"
 
 = partial "shared/header"
 
@@ -45,6 +44,7 @@ section.section-about
       li.client-logo.client-sportsvault SportsVault
 
 section.section-ready
-  = link_to "Ready? Let's talk", "#contact", class: "btn btn-outline"
+  = link_to "Ready? Let's talk", "", data: {toggle: "modal", target: "#contact"}, class: "btn btn-outline"
 
 = partial "shared/footer"
+= partial "shared/contact"

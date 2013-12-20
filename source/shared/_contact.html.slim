@@ -1,0 +1,21 @@
+#contact.modal.hide tabindex="-1" role="dialog" aria-hidden="true"
+  .modal-dialog
+    .modal-content
+      .modal-header
+        .ss-icon.pull-right type="button" class="close" data-dismiss="modal" aria-hidden="true" Close
+        h4.modal-title Let's make something great together
+      .modal-body
+        .half
+          p.ss-send= mail_to "hello@brightbit.com"
+          p.ss-phone tel="4055950011" (405)595-0011
+          p.ss-social-twitter= link_to "@brightbit", "http://twitter.com/brightbit", target: "_new"
+        .half
+          p.ss-location
+            | Brightbit
+            br
+            | 726 W Sheridan Ave
+            br
+            | Suite 130
+            br
+            | Oklahoma City, OK 73120
+          p= link_to "Map", "http://goo.gl/XiuMq", target: "_new", class: "btn btn-outline btn-small"
