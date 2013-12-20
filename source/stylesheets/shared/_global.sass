@@ -398,8 +398,11 @@ mark
     left: 50%
     margin-left: -($modal-width/2)
   .close
+    @extend .btn.btn-outline
     cursor: pointer
-    margin-top: -20px
+    position: absolute
+    top: -5%
+    right: 0
   .modal-title
     @extend .section-title
     margin-bottom: 1.5em
