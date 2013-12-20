@@ -1,29 +1,17 @@
-section.work-example
-  .work-image.work-desktop= image_tag("work/baton-desktop-1.png")
-  h2.section-title Baton
-  p.section-subtitle Project Management
+---
+blog: 'work'
+---
 
-section.work-example
-  .work-image.work-desktop= image_tag("work/swagexpert-desktop-1.png")
-  h2.section-title Swag Expert
-  p.section-subtitle Promotional Products eCommerce
-
-section.work-example#sportsvault
-  .work-image.work-desktop= image_tag("work/sportsvault-desktop-1.png")
-  h2.section-title SportsVault
-  p.section-subtitle Fantasy Sports Payments &amp; Communcation
-
-section.work-example#kikuchat
-  .work-image.work-desktop= image_tag("work/kikuchat-desktop-1.png")
-  h2.section-title Kikuchat
-  p.section-subtitle Team Collaboration
-
-section.work-example#frisby
-  .work-image.work-desktop= image_tag("work/frisby-desktop-1.png")
-  h2.section-title Frisby
-  p.section-subtitle API Testing (Open Source Project)
-
-section.work-example#keynotes
-  .work-image.work-desktop= image_tag("work/keynotes-desktop-1.png")
-  h2.section-title Keynotes
-  p.section-subtitle Social Conference Listings
+.blog-index
+  //h1.section-title Articles
+  - if page_articles.any?
+    - page_articles.each_with_index do |post, i|
+        article.post.work-example id=post.title.downcase.strip
+          .work-image.work-desktop= image_tag(post.data.index_image)
+          h2.section-title= post.title
+          p.section-subtitle= post.data.type
+          - if post.data.summary
+            p= post.data.summary
+  - else
+    .section-title Work
+    p Sorry, no articles yet
