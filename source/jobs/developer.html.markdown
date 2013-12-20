@@ -9,7 +9,7 @@ Full time position in Oklahoma City
 
 <p class="info">This position has been filled. Welcome to the team, Jeffrey Richardson!</p>
 
-Brightbit is looking for a Full Stack Developer (some front-end and back-end) to build well-crafted web applications at our Oklahoma City headquarters. As a member of our development team, you’ll build responsive and elegant interfaces using Ruby on Rails and similar technologies, while possessing a deep understanding of our entire application stack.
+Brightbit is looking for a Full Stack Developer (some front-end and back-end) to build well-crafted web applications at our Oklahoma City headquarters. As a member of our development team, you'll build responsive and elegant interfaces using Ruby on Rails and similar technologies, while possessing a deep understanding of our entire application stack.
 
 <div><strong>You must possess</strong></div>
 * Between 3 and 5 years development experience
@@ -31,14 +31,14 @@ Brightbit is looking for a Full Stack Developer (some front-end and back-end) to
 
 <div><strong>Benefits</strong></div>
 * Competitive salary
-* We’ll have a MacBook Pro ready for you (and other Apple equipment)
+* We'll have a MacBook Pro ready for you (and other Apple equipment)
 * 2 days in the office / 3 days telecommute per week
-* We’ll pay for lunch on office days
+* We'll pay for lunch on office days
 * Flexible hours/schedule
 * Relaxed and friendly office atmosphere
 * 2 weeks paid time off
 
-Send your resume and references to <hello@brightbit.com> * we’d love to work together!
+Send your resume and references to <hello@brightbit.com> * we'd love to work together!
 
 
 Brightbit is an application development studio with years of experience crafting apps of all sizes. We are passionate about making the web a better place to live.

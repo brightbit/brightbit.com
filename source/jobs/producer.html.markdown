@@ -26,14 +26,14 @@ Brightbit is looking for an experienced salesperson to help us continue to grow 
 
 <div><strong>Benefits</strong></div>
 * Competitive salary
-* We’ll have a MacBook Pro ready for you (and other Apple equipment)
+* We'll have a MacBook Pro ready for you (and other Apple equipment)
 * 2 days in the office / 3 days telecommute per week
-* We’ll pay for lunch on office days
+* We'll pay for lunch on office days
 * Flexible hours/schedule
 * 2 weeks paid time off
 * Relaxed and friendly office atmosphere
 
-Send your resume and references to <hello@brightbit.com> - we’d love to work together!
+Send your resume and references to <hello@brightbit.com> - we'd love to work together!
 
 
 Brightbit is an application development studio with years of experience crafting apps of all sizes. We are passionate about making the web a better place to live.
