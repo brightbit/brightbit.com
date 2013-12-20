@@ -29,8 +29,13 @@
       right: 0
       box-shadow: 0 0 5px rgba(black, 0.35)
   .logo
-    margin: 0
     float: left
+    display: block
+    margin: 0
+    @media only screen and (max-width: $break-small)
+      float: none
+      svg
+        margin: 0 auto
     h1
       text-indent: 100%
       overflow: hidden
@@ -47,6 +52,12 @@
   .site-nav
     float: right
     text-align: right
+    @media only screen and (max-width: $break-small)
+      float: none
+      clear: both
+      text-align: center
+      .btn
+        display: none
     ul
       margin: 0
     li

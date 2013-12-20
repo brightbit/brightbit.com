@@ -7,30 +7,49 @@
 
 footer
   margin: 0
-  padding: 5em 20px
+  padding: 0
   background: $darkblue
-  color: lighten($darkblue, 25%)
+  color: lighten($darkblue, 20%)
   text-align: center
-  line-height: 25px
+  line-height: 1.35em
+  font-weight: 300
+  section
+    margin: 0 auto
+    padding: 4em 20px 2em
+    overflow: hidden
+  ul
+    @extend .list-simple
+    margin-bottom: 2em
+    li
+      margin: 0.5em 0
+      &:before
+        display: none
+  .list-title
+    color: lighten($darkblue, 10%)
+    margin-bottom: 1em
   a
-    margin-right: 1em
-    color: lighten($darkblue, 25%)
+    color: lighten($darkblue, 20%)
     &:hover
       color: lighten($darkblue, 50%)
-  .brightbit-logo
-    display: block
-    height: 35px
-    width: 35px
-    margin: 0 auto
   @media only screen and (min-width: $break-medium)
-    height: 25px
-    .contact-email
-      float: left
     .copyright
       float: right
       text-align: right
-    .brightbit-logo
-      margin: -5px auto
-    .site-nav
+    nav
       float: left
-
+      width: 20%
+      text-align: left
+      margin-right: 5%
+    ul
+      margin-bottom: 2em
+      &.list-contact
+        li
+          position: relative
+          z-index: 1
+          padding-left: 1.5em
+          &:before
+            display: block
+            position: absolute
+            z-index: 1
+            top: 0
+            left: 0

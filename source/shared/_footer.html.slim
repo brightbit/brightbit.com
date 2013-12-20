@@ -1,8 +1,22 @@
 footer
-  nav.site-nav
-    ul.list-inline
-      li= link_to "Our Work", "/work"
-      li= link_to "Team", "/team"
-      li= link_to "Articles", "/articles"
-      li= link_to "News", "/news"
-  .copyright &copy; #{Time.now.year} #{link_to "Brightbit", "http://brightbit.com", target: "new", class: "logo-brightbit"} All rights reserved
+  section
+    nav
+      .list-title Company
+      ul.site-nav
+        li= link_to "Our Work", "/work"
+        li= link_to "Team", "/team"
+        li= link_to "Articles", "/articles"
+        li= link_to "News", "/news"
+    nav
+      .list-title Products
+      ul
+        li= link_to "Kikuchat", "http://kikuchat.com"
+        li= link_to "Sounding Board", "http://soundingboard.com"
+    nav
+      .list-title Say Hi
+      ul.list-contact
+        li.ss-send= mail_to "hello@brightbit.com"
+        li.ss-social-twitter= link_to "@brightbit", "http://twitter.com/brightbit"
+        li.ss-phone tel="4055950011" (405) 595-0011
+        li.ss-location 726 W Sheridan Ave, Suite 130<br>Oklahoma City, OK 73102
+    .copyright &copy; #{Time.now.year} #{link_to "Brightbit", "http://brightbit.com", target: "new", class: "logo-brightbit"}.<br>All rights reserved
