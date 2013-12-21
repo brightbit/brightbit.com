@@ -1,0 +1,6 @@
+- wrap_layout :layout do
+  article.post
+    h1.section-title= current_page.data.title
+    p.section-subtitle= current_page.data.type
+
+    = yield

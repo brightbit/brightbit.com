@@ -1,0 +1,23 @@
+.jobs
+  .container section
+    max-width: $break-medium
+
+  .post
+    margin-top: 6em
+
+  .table
+    tr
+      td
+        padding: 1em
+        &.title
+          font-size: 1.25em
+        &.location
+          color: #aaa
+          font-weight: 300
+          @media only screen and (min-width: $break-medium)
+            text-align: right
+            line-height: 2.25em
+        @media only screen and (max-width: $break-medium)
+          text-align: center
+          &.location
+            padding-top: 0

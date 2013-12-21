@@ -1,0 +1,21 @@
+---
+title: Sales Person
+type: Full time
+location: Anywhere
+published: true
+---
+
+Brightbit is looking for an experienced project manager or salesperson to help us continue to grow our company.
+The ideal candidate for this position possesses excellent communication skills and is passionate about innovation and web technology.
+
+###You must possess
+* Between 3+ years of technology related sales or business development experience
+* Proven track record of landing large to enterprise size projects
+* Understand complex customer requirements on both a business and technical level
+* Excellent communication and presentation skills, both written and verbal.
+
+###Bonus Points
+* BA/BS or related degree
+* You've done a little coding yourself and aren't afraid of the command line
+* Experience freelancing and handling client communication
+* You live in the Oklahoma City area

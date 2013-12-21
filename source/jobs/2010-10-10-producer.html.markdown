@@ -2,9 +2,10 @@
 title: Producer
 type: Full time
 location: Oklahoma City
+published: false
 ---
 
-Brightbit is looking for an experienced salesperson to help us continue to grow our company. The ideal candidate for this position possesses excellent communication skills and is passionate about innovation and web technology.
+Brightbit is looking for an experienced project manager or salesperson to help us continue to grow our company. The ideal candidate for this position possesses excellent communication skills and is passionate about innovation and web technology.
 
 ##You must possess
 * At least one year of sales experience

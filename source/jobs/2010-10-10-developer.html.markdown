@@ -1,9 +1,8 @@
 ---
-layout: work
 title: Full Stack Developer
 type: Full time
 location: Oklahoma City
-published: true
+published: false
 ---
 Brightbit is looking for a Full Stack Developer (some front-end and back-end) to build well-crafted web applications at our Oklahoma City headquarters. As a member of our development team, you'll build responsive and elegant interfaces using Ruby on Rails and similar technologies, while possessing a deep understanding of our entire application stack.
 

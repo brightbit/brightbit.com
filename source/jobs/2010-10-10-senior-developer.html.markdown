@@ -1,8 +1,8 @@
 ---
-layout: work
 title: Senior Developer
 type: Full time
 location: Oklahoma City
+published: false
 ---
 Brightbit is looking for an experienced developer to build well-crafted web applications and help make the web a better place to live. As a member of our development team, you'll build responsive and elegant interfaces using Ruby on Rails and similar technologies, while possessing a deep understanding of our entire application stack. We’d love to have someone near our Oklahoma City headquarters, but will also allow working remotely for the right developer.
 

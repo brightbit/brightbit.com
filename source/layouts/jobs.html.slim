@@ -1,0 +1,21 @@
+- wrap_layout :layout do
+  article.post
+    h1.section-title= current_page.data.title
+    p.section-subtitle
+      = current_page.data.type
+      = " (#{current_page.data.location})"
+
+    = yield
+
+    h2 Benefits
+    ul
+      li Competitive salary
+      li We'll have a MacBook Pro ready for you (and other Apple equipment)
+      li 2 days in the office / 3 days telecommute per week
+      li We'll pay for lunch on office days
+      li Flexible hours/schedule
+      li Relaxed and friendly office atmosphere
+      li 2 weeks paid time off
+
+    p Send your resume and references to #{mail_to "hello@brightbit.com"} we'd love to work together!
+    p Brightbit is an application development studio with years of experience crafting apps of all sizes. We are passionate about making the web a better place to live.
