@@ -27,24 +27,16 @@ end
 
 # Multiple Blogs
 activate :blog do |blog|
-  blog.name              = "news"
+  blog.name              = "blog"
   blog.layout            = "post"
   blog.permalink         = ":year/:month/:day/:title"
-  blog.prefix            = "news"
+  blog.prefix            = "blog"
   #blog.tag_template      = "tag.html"
   #blog.taglink           = "tags/:tag.html"
   # blog.summary_separator = /(READMORE)/
   # blog.summary_length    = 250
   # blog.per_page          = 5
   # blog.page_link         = "page/:num"
-end
-
-activate :blog do |blog|
-  blog.name              = "articles"
-  blog.layout            = "post"
-  blog.permalink         = ":year/:month/:day/:title"
-  blog.prefix            = "articles"
-  #blog.tag_template      = "tag.html"
 end
 
 activate :blog do |blog|
