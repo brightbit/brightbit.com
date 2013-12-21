@@ -52,12 +52,6 @@
   .site-nav
     float: right
     text-align: right
-    @media only screen and (max-width: $break-small)
-      float: none
-      clear: both
-      text-align: center
-      .btn
-        display: none
     ul
       margin: 0
     li
@@ -73,3 +67,12 @@
         &.btn-primary
           color: white
           padding: 0.75em 2em 0.65em
+    @media only screen and (max-width: $break-small)
+      padding: 5px 0
+      float: none
+      clear: both
+      text-align: center
+      li a
+        padding: 0 0.25em
+        &.btn-primary
+          padding: 0.5em 1em 0.3em

@@ -397,26 +397,36 @@ mark
 .modal
   position: fixed
   z-index: 2001
-  top: 20%
-  width: 100%
+  top: 15%
+  left: 0
+  right: 0
+  width: 90%
+  padding: 5%
+  margin: 0 auto
   max-width: $modal-width
   color: white
   outline: none
   box-shadow: none
-  @media only screen and (min-width: $modal-width)
-    left: 50%
-    margin-left: -($modal-width/2)
+  +animation(fadeIn 200ms ease)
   .close
-    @extend .btn
-    @extend .btn-outline
     cursor: pointer
     position: absolute
-    top: -5%
-    right: 0
+    top: 5%
+    right: 5%
+    border-radius: 50%
+    background: darken($modal-bg, 10%)
+    color: $modal-bg
+    text-align: center
+    width: 25px
+    height: 25px
+    padding: 0
+    overflow: hidden
+    line-height: 30px
   .modal-title
     @extend .section-title
-    margin-bottom: 1.5em
-    padding: 0 20px
+    padding: 0 20px 0.5em
+    border-bottom: 3px double lighten($modal-bg, 10%)
+    margin-bottom: 1em
   .modal-body
     font-size: 1.25em
     line-height: 1.5em
@@ -425,13 +435,13 @@ mark
     p
       margin-bottom: 2em
   a
-    color: lighten($darkblue, 40%)
+    color: lighten($modal-bg, 40%)
     &:hover
-      color: lighten($darkblue, 60%)
+      color: lighten($modal-bg, 60%)
   .btn-outline
-    border: 1px solid lighten($darkblue, 40%)
+    border: 1px solid lighten($modal-bg, 40%)
     &:hover
-      border-color: lighten($darkblue, 60%)
+      border-color: lighten($modal-bg, 60%)
 
 .modal-backdrop
   position: fixed
@@ -440,4 +450,5 @@ mark
   bottom: 0
   left: 0
   right: 0
-  background: rgba($darkblue, 0.95)
+  background: rgba($modal-bg, 0.95)
+  +animation(fadeIn 200ms ease)

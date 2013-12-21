@@ -1,6 +1,6 @@
 ---
 title: Frisby
-subtitle: API Testing (Open Source Project)
+type: API Testing (Open Source Project)
 index_image: "work/frisby-desktop-1.png"
 date: 2012-04-30
 ---
