@@ -2,4 +2,5 @@
 title: Baton
 type: Project Management
 index_image: "work/baton-desktop-1.png"
+date: 2013-10-31
 ---

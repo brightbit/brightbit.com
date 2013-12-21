@@ -2,4 +2,5 @@
 title: Keynotes
 type: Social Conference Listings
 index_image: "work/keynotes-desktop-1.png"
+date: 2012-03-31
 ---
