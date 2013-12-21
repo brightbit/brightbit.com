@@ -49,8 +49,16 @@ end
 
 activate :blog do |blog|
   blog.name              = "work"
-  blog.layout            = "work"
+  blog.layout            = "post"
   blog.permalink         = ":title"
   blog.prefix            = "work"
+  #blog.tag_template      = "tag.html"
+end
+
+activate :blog do |blog|
+  blog.name              = "jobs"
+  blog.layout            = "jobs"
+  blog.permalink         = ":title"
+  blog.prefix            = "jobs"
   #blog.tag_template      = "tag.html"
 end

@@ -1,0 +1,15 @@
+---
+blog: 'jobs'
+---
+
+section.blog-index
+  h1.section-title Jobs
+  - if page_articles.any?
+    .list-title Open Positions
+    table.table
+      - page_articles.each_with_index do |post, i|
+        tr
+          td.title= link_to post.title, post
+          td.location= post.data.location
+  - else
+    p.section-subtitle Sorry, no job postings at the moment
