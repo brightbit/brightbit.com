@@ -11,8 +11,8 @@
 */
 @font-face {
   font-family: "SSStandard";
-  src: url("/fonts/ss-standard.eot");
-  src: url("/fonts/ss-standard.eot?#iefix") format("embedded-opentype"), url("/fonts/ss-standard.woff") format("woff"), url("/fonts/ss-standard.ttf") format("truetype"), url("/fonts/ss-standard.svg#SSStandard") format("svg");
+  src: url("../fonts/ss-standard.eot");
+  src: url("../fonts/ss-standard.eot?#iefix") format("embedded-opentype"), url("../fonts/ss-standard.woff") format("woff"), url("../fonts/ss-standard.ttf") format("truetype"), url("../fonts/ss-standard.svg#SSStandard") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -799,15 +799,15 @@ html:hover [class^="ss-"] {
 */
 @font-face {
   font-family: "SSSocial";
-  src: url("/fonts/ss-social-circle.eot");
-  src: url("/fonts/ss-social-circle.eot?#iefix") format("embedded-opentype"), url("/fonts/ss-social-circle.woff") format("woff"), url("/fonts/ss-social-circle.ttf") format("truetype"), url("/fonts/ss-social-circle.svg#SSSocialCircle") format("svg");
+  src: url("../fonts/ss-social-circle.eot");
+  src: url("../fonts/ss-social-circle.eot?#iefix") format("embedded-opentype"), url("../fonts/ss-social-circle.woff") format("woff"), url("../fonts/ss-social-circle.ttf") format("truetype"), url("../fonts/ss-social-circle.svg#SSSocialCircle") format("svg");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: "SSSocial";
-  src: url("/fonts/ss-social-regular.eot");
-  src: url("/fonts/ss-social-regular.eot?#iefix") format("embedded-opentype"), url("/fonts/ss-social-regular.woff") format("woff"), url("/fonts/ss-social-regular.ttf") format("truetype"), url("/fonts/ss-social-regular.svg#SSSocialRegular") format("svg");
+  src: url("../fonts/ss-social-regular.eot");
+  src: url("../fonts/ss-social-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ss-social-regular.woff") format("woff"), url("../fonts/ss-social-regular.ttf") format("truetype"), url("../fonts/ss-social-regular.svg#SSSocialRegular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -1146,6 +1146,42 @@ html:hover [class^="ss-"] {
   100% {
     transform: translateX(0); } }
 
+@-webkit-keyframes fadeIn {
+  /* line 26, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_animation.sass */
+  0% {
+    opacity: 0; }
+
+  /* line 28, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_animation.sass */
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes fadeIn {
+  /* line 26, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_animation.sass */
+  0% {
+    opacity: 0; }
+
+  /* line 28, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_animation.sass */
+  100% {
+    opacity: 1; } }
+
+@-o-keyframes fadeIn {
+  /* line 26, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_animation.sass */
+  0% {
+    opacity: 0; }
+
+  /* line 28, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_animation.sass */
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  /* line 26, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_animation.sass */
+  0% {
+    opacity: 0; }
+
+  /* line 28, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_animation.sass */
+  100% {
+    opacity: 1; } }
+
 /* line 1, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
 body, html {
   height: 100%;
@@ -1192,10 +1228,10 @@ img {
   margin: 0 auto 0.75rem; }
 
 /* line 34, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
-.section-title, .post-title, .section-subtitle {
+.section-title, .modal .modal-title, .post-title, .section-subtitle {
   margin: 0 0 1em;
   font-size: 2.5em;
-  line-height: 1.25em;
+  line-height: 1.1em;
   font-weight: 200;
   text-align: center; }
 
@@ -1216,11 +1252,11 @@ ul {
     margin-bottom: 0.5em; }
 
 /* line 54, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
-.list-simple {
+.list-simple, footer ul {
   margin: 0;
   list-style-type: none; }
   /* line 57, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
-  .list-simple li {
+  .list-simple li, footer ul li {
     margin: 0; }
 
 /* line 60, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
@@ -1229,6 +1265,12 @@ ul {
   list-style: none; }
 
 /* line 64, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+.list-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1em; }
+
+/* line 69, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
 .panel, form {
   border-radius: 5px;
   padding: 3em 20px;
@@ -1236,7 +1278,7 @@ ul {
   background: white;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15); }
 
-/* line 71, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+/* line 76, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
 .top {
   position: relative;
   z-index: 1;
@@ -1245,7 +1287,7 @@ ul {
   background: #f49200 center center;
   background-size: cover;
   color: white; }
-  /* line 79, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+  /* line 84, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
   .top .top-title {
     position: relative;
     z-index: 2;
@@ -1265,26 +1307,31 @@ ul {
     -webkit-box-align: stretch;
     -moz-box-align: stretch;
     box-align: stretch; }
-    /* line 88, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+    /* line 93, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
     .no-flexbox .top .top-title {
       padding-top: 20%; }
-    /* line 90, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+    /* line 95, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
     .top .top-title *:last-child {
       margin-bottom: 0; }
-    /* line 92, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+    /* line 97, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
     .top .top-title h1 {
       margin-bottom: 0.25em; }
 
-/* line 98, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+/* line 103, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
 .table {
   width: 100%;
-  margin: 0 1em 2em 0; }
-  /* line 101, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+  margin: 0 1em 2em 0;
+  border-collapse: collapse;
+  border: 1px solid #dddddd;
+  background: white; }
+  /* line 109, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+  .table tr {
+    border-bottom: 1px solid #eeeeee; }
+  /* line 111, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
   .table td, .table th, .table .td, .table .th {
     padding: 8px;
-    vertical-align: top;
-    border: 1px solid #dddddd; }
-  /* line 105, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+    vertical-align: top; }
+  /* line 114, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
   .table thead td, .table .thead .td {
     text-align: center;
     text-transform: uppercase;
@@ -1295,15 +1342,15 @@ ul {
     background: #eeeeee; }
 
 @media only screen and (max-width: 768px) {
-  /* line 116, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+  /* line 125, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
   table, thead, tbody, tr, th, td {
     display: block; }
 
-  /* line 118, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+  /* line 127, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
   thead td {
     position: absolute;
     left: -9999px; } }
-/* line 123, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+/* line 132, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
 .table-header {
   position: relative;
   z-index: 2;
@@ -1317,31 +1364,31 @@ ul {
   font-weight: 300;
   font-size: 1.5em;
   text-align: center; }
-  /* line 136, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+  /* line 145, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
   .table-header a {
     float: left;
     color: white;
     padding: 0 10px; }
-    /* line 140, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+    /* line 149, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
     .table-header a:last-child {
       float: right; }
 
-/* line 143, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+/* line 152, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
 .table-bordered {
   background: white;
   border: 1px solid #cccccc;
   border-collapse: collapse;
   box-shadow: 0 3px 5px #eeeeee; }
-  /* line 148, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+  /* line 157, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
   .table-bordered td:first-child, .table-bordered .td:first-child {
     border-left: none; }
 
 /* Forms */
-/* line 154, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+/* line 163, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
 form {
   margin-bottom: 20px; }
 
-/* line 158, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+/* line 167, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
 input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"] {
   height: 20px;
   width: 250px;
@@ -1354,15 +1401,15 @@ input[type="email"], input[type="number"], input[type="password"], input[type="s
   line-height: 1.2em;
   color: #555555;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
-  /* line 170, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+  /* line 179, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
   .error input[type="email"], .error input[type="number"], .error input[type="password"], .error input[type="search"], .error input[type="tel"], .error input[type="text"], .error input[type="url"], .error input[type="color"], .error input[type="date"], .error input[type="datetime"], .error input[type="datetime-local"], .error input[type="month"], .error input[type="time"], .error input[type="week"] {
     margin-bottom: 10px; }
 
-/* line 173, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+/* line 182, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
 .control-group {
   margin-bottom: 20px; }
 
-/* line 176, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+/* line 185, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
 .control-label {
   float: left;
   width: 160px;
@@ -1373,19 +1420,19 @@ input[type="email"], input[type="number"], input[type="password"], input[type="s
   font-size: 0.7em;
   line-height: 2em; }
 
-/* line 186, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+/* line 195, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
 .controls {
   position: relative;
   z-index: 1;
   margin-left: 180px; }
 
-/* line 191, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+/* line 200, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
 .controls-text {
   line-height: 20px;
   padding-top: 5px;
   margin-bottom: 5px; }
 
-/* line 199, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+/* line 208, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
 .help-inline {
   position: absolute;
   z-index: 2;
@@ -1398,7 +1445,7 @@ input[type="email"], input[type="number"], input[type="password"], input[type="s
   line-height: 1.5em;
   white-space: nowrap;
   border-radius: 3px; }
-  /* line 211, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+  /* line 220, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
   .help-inline:before {
     content: "";
     position: absolute;
@@ -1411,34 +1458,34 @@ input[type="email"], input[type="number"], input[type="password"], input[type="s
     border: 5px solid transparent;
     border-bottom-color: #d9534f; }
 
-/* line 223, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+/* line 232, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
 .form-actions {
   clear: both;
   margin: 3em 0 0;
   border-top: 1px solid #eeeeee;
   padding: 19px 20px 20px 180px;
   background: none; }
-  /* line 229, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+  /* line 238, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
   .form-actions .btn {
     margin-right: 1em; }
   @media only screen and (max-width: 480px) {
-    /* line 232, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+    /* line 241, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
     .form-actions .btn-text {
       clear: both;
       padding: 10px 0 0;
       line-height: 1.35em; } }
 
-/* line 237, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+/* line 246, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
 .form-back {
   float: right; }
 
-/* line 241, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+/* line 250, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
 .alert {
   border: 1px solid #d9534f;
   padding: 0 20px;
   color: #d9534f;
   margin-bottom: 2em; }
-  /* line 246, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+  /* line 255, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
   .alert .close {
     float: right;
     margin-top: 1em;
@@ -1448,116 +1495,116 @@ input[type="email"], input[type="number"], input[type="password"], input[type="s
     font-size: 1em;
     font-weight: 500;
     cursor: pointer; }
-  /* line 255, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+  /* line 264, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
   .alert h4 {
     margin-top: 1em; }
 
 @media only screen and (max-width: 480px) {
-  /* line 259, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+  /* line 268, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
   .controls {
     margin-left: 110px; }
 
-  /* line 261, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+  /* line 270, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
   .control-label {
     width: 100px; }
 
-  /* line 263, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+  /* line 272, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
   .form-actions {
     padding-left: 110px; } }
-/* line 267, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+/* line 275, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
 aside {
   margin-top: 4.5em;
   background: #eeeeee;
   box-shadow: 1px 1px white;
   padding: 1em;
   line-height: 1.5em; }
-  /* line 273, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+  /* line 281, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
   aside section {
     padding-bottom: 0;
     border-bottom: 0;
     margin-bottom: 2em; }
 
 /* Typography */
-/* line 279, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+/* line 287, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
 html, body, p, ul, ol, li, dl, dt, dd, blockquote, q, address {
   font-family: "Bit Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
 
-/* line 282, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+/* line 290, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
 h1, h2, h3, h4, h5, h6, p {
   display: block;
   margin: 0 0 1rem; }
 
-/* line 286, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+/* line 294, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   letter-spacing: -0.02em; }
 
-/* line 290, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+/* line 298, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
 h2 {
   font-size: 2rem;
   line-height: 1em; }
 
-/* line 294, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+/* line 302, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
 h3 {
   font-size: 1.5rem;
   line-height: 1em; }
 
-/* line 298, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+/* line 306, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
 h4 {
   font-size: 1.25rem;
   line-height: 1em; }
 
-/* line 302, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+/* line 310, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
 a {
   text-decoration: none;
   color: #0a9ccc;
   -webkit-transition: all, 200ms;
   -moz-transition: all, 200ms;
   transition: all, 200ms; }
-  /* line 306, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+  /* line 314, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
   a:hover {
     text-decoration: none;
     color: #15bdf4; }
 
-/* line 310, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+/* line 318, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
 small, .help-block, .form-back, body.index .clients .testimonial p.author, .post-meta {
   color: #aaaaaa;
   font-size: 0.8em;
   font-weight: 300; }
 
 /* Helpers */
-/* line 318, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+/* line 326, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
 .clear {
   clear: both; }
 
-/* line 321, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
-.f-left {
+/* line 329, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+.pull-left {
   float: left;
   clear: none; }
 
-/* line 325, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
-.f-right {
+/* line 333, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+.pull-right {
   float: right;
   clear: none; }
 
-/* line 329, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+/* line 337, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
 .hide {
   display: none; }
 
 @media only screen and (min-width: 768px) {
-  /* line 332, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+  /* line 340, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
   .half {
     float: left;
     width: 50%; } }
 
-/* line 337, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+/* line 345, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
 mark {
   padding: 0 0.25em;
   text-shadow: none;
   background: #f7f7d1;
   box-shadow: 0.25em 0 0 #f7f7d1, -0.25em 0 0 #f7f7d1; }
 
-/* line 343, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+/* line 351, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
 .btn {
   display: inline-block;
   margin: 0;
@@ -1571,37 +1618,119 @@ mark {
   text-transform: uppercase;
   text-shadow: none;
   color: #0a9ccc; }
-  /* line 356, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+  /* line 364, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
   .btn:hover {
     color: #15bdf4; }
-  /* line 358, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+  /* line 366, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
   .btn.btn-primary {
     border: none;
     background: #0a9ccc;
     color: white;
     text-shadow: none; }
-    /* line 363, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+    /* line 371, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
     .btn.btn-primary:hover {
       background: #0aa3d6; }
 
-/* line 366, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+/* line 374, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
 .btn-large {
   font-size: 1em;
   line-height: 1em;
   padding: 1em; }
 
-/* line 371, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+/* line 379, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+.btn-small {
+  padding: 0.25em 1.5em 0.2em; }
+
+/* line 382, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
 .btn-outline {
   background: none;
-  border: 2px solid #0a9ccc;
-  color: #0a9ccc; }
+  border: 2px solid #0a9ccc; }
+  /* line 385, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+  .btn-outline:hover {
+    border: 2px solid #15bdf4; }
 
-/* line 376, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+/* line 388, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
 .btn-text {
   padding: 0.75em 2em 0.65em;
   font-size: 0.75em;
   line-height: 2em;
   color: #aaaaaa; }
+
+/* line 394, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+.hide, .hidden {
+  display: none; }
+
+/* line 397, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+.modal {
+  position: fixed;
+  z-index: 2001;
+  top: 15%;
+  left: 0;
+  right: 0;
+  width: 90%;
+  padding: 5%;
+  margin: 0 auto;
+  max-width: 680px;
+  color: white;
+  outline: none;
+  box-shadow: none;
+  -webkit-animation: fadeIn 200ms ease;
+  -moz-animation: fadeIn 200ms ease;
+  animation: fadeIn 200ms ease; }
+  /* line 411, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+  .modal .close {
+    cursor: pointer;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    border-radius: 50%;
+    background: #3c474c;
+    color: #536168;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    overflow: hidden;
+    line-height: 30px; }
+  /* line 425, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+  .modal .modal-title {
+    padding: 0 20px 0.5em;
+    border-bottom: 3px double #6a7b84;
+    margin-bottom: 1em; }
+  /* line 430, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+  .modal .modal-body {
+    font-size: 1.25em;
+    line-height: 1.5em;
+    font-weight: 300;
+    padding: 0 20px; }
+    /* line 435, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+    .modal .modal-body p {
+      margin-bottom: 2em; }
+  /* line 437, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+  .modal a {
+    color: #bdc6ca; }
+    /* line 439, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+    .modal a:hover {
+      color: #f6f7f7; }
+  /* line 441, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+  .modal .btn-outline {
+    border: 1px solid #bdc6ca; }
+    /* line 443, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+    .modal .btn-outline:hover {
+      border-color: #f6f7f7; }
+
+/* line 446, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_global.sass */
+.modal-backdrop {
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(83, 97, 104, 0.95);
+  -webkit-animation: fadeIn 200ms ease;
+  -moz-animation: fadeIn 200ms ease;
+  animation: fadeIn 200ms ease; }
 
 /* line 1, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_code.css.erb */
 .highlight table {
@@ -1963,111 +2092,159 @@ code {
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.35); } }
   /* line 31, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_header.sass */
   .site-header .logo {
-    margin: 0;
-    float: left; }
-    /* line 34, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_header.sass */
+    float: left;
+    display: block;
+    margin: 0; }
+    @media only screen and (max-width: 480px) {
+      /* line 31, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_header.sass */
+      .site-header .logo {
+        float: none; }
+        /* line 37, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_header.sass */
+        .site-header .logo svg {
+          margin: 0 auto; } }
+    /* line 39, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_header.sass */
     .site-header .logo h1 {
       text-indent: 100%;
       overflow: hidden;
       font-size: 0;
       margin: 0; }
-    /* line 39, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_header.sass */
+    /* line 44, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_header.sass */
     .site-header .logo svg, .site-header .logo img {
       display: none; }
-    /* line 42, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_header.sass */
+    /* line 47, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_header.sass */
     .svg .site-header .logo svg {
       display: block; }
-    /* line 45, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_header.sass */
+    /* line 50, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_header.sass */
     .no-svg .site-header .logo img {
       display: block; }
-  /* line 47, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_header.sass */
+  /* line 52, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_header.sass */
   .site-header .site-nav {
     float: right;
     text-align: right; }
-    /* line 50, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_header.sass */
+    /* line 55, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_header.sass */
     .site-header .site-nav ul {
       margin: 0; }
-    /* line 52, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_header.sass */
+    /* line 57, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_header.sass */
     .site-header .site-nav li {
       color: #777777;
       display: inline-block;
       margin: 0 0 0 1em;
       line-height: 2.5em; }
-      /* line 57, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_header.sass */
+      /* line 62, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_header.sass */
       .site-header .site-nav li a {
         color: #555555;
         padding: 0 0.5em; }
-        /* line 60, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_header.sass */
+        /* line 65, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_header.sass */
         .site-header .site-nav li a:hover {
           color: #959595; }
+        /* line 67, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_header.sass */
+        .site-header .site-nav li a.btn-primary {
+          color: white;
+          padding: 0.75em 2em 0.65em; }
+    @media only screen and (max-width: 480px) {
+      /* line 52, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_header.sass */
+      .site-header .site-nav {
+        padding: 5px 0;
+        float: none;
+        clear: both;
+        text-align: center; }
+        /* line 75, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_header.sass */
+        .site-header .site-nav li a {
+          padding: 0 0.25em; }
+          /* line 77, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_header.sass */
+          .site-header .site-nav li a.btn-primary {
+            padding: 0.5em 1em 0.3em; } }
 
 /* line 1, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_footer.sass */
 .wrapper {
   min-height: 100%;
-  margin-bottom: -75px; }
+  margin-bottom: -300px; }
   /* line 5, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_footer.sass */
   .wrapper .footer-push {
-    height: 175px; }
+    height: 300px; }
 
 /* line 8, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_footer.sass */
 footer {
   margin: 0;
-  padding: 5em 20px;
+  padding: 0;
+  height: 300px;
+  overflow: hidden;
   background: #536168;
-  color: #92a1a8;
+  color: #84959d;
   text-align: center;
-  line-height: 25px; }
-  /* line 15, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_footer.sass */
+  line-height: 1.35em;
+  font-weight: 300; }
+  /* line 18, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_footer.sass */
+  footer section {
+    margin: 0 auto;
+    padding: 4em 20px 2em;
+    overflow: hidden; }
+  /* line 22, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_footer.sass */
+  footer ul {
+    margin-bottom: 2em; }
+    /* line 25, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_footer.sass */
+    footer ul li {
+      margin: 0.5em 0; }
+      /* line 27, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_footer.sass */
+      footer ul li:before {
+        display: none; }
+  /* line 29, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_footer.sass */
+  footer .list-title {
+    color: #6a7b84; }
+  /* line 31, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_footer.sass */
   footer a {
-    margin-right: 1em;
-    color: #92a1a8; }
-    /* line 18, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_footer.sass */
+    color: #84959d; }
+    /* line 33, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_footer.sass */
     footer a:hover {
       color: #d9dee1; }
-  /* line 20, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_footer.sass */
-  footer .brightbit-logo {
-    display: block;
-    height: 35px;
-    width: 35px;
-    margin: 0 auto; }
-  @media only screen and (min-width: 480px) {
-    /* line 8, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_footer.sass */
-    footer {
-      height: 25px; }
-      /* line 27, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_footer.sass */
-      footer .contact-email {
-        float: left; }
-      /* line 29, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_footer.sass */
-      footer .copyright {
-        float: right;
-        text-align: right; }
-      /* line 32, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_footer.sass */
-      footer .brightbit-logo {
-        margin: -5px auto; } }
-  /* line 34, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_footer.sass */
-  footer .site-nav {
-    float: left; }
+  @media only screen and (min-width: 768px) {
+    /* line 36, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_footer.sass */
+    footer .copyright {
+      float: right;
+      text-align: right; }
+    /* line 39, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_footer.sass */
+    footer nav {
+      float: left;
+      width: 20%;
+      text-align: left;
+      margin-right: 5%; }
+    /* line 44, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_footer.sass */
+    footer ul {
+      margin-bottom: 2em; }
+      /* line 47, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_footer.sass */
+      footer ul.list-contact li {
+        position: relative;
+        z-index: 1;
+        padding-left: 1.5em; }
+        /* line 51, /Users/joshua/Code/brightbit.com/source/stylesheets/shared/_footer.sass */
+        footer ul.list-contact li:before {
+          display: block;
+          position: absolute;
+          z-index: 1;
+          top: 0;
+          left: 0; } }
 
 /* Sections */
 /* line 13, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
 body.index .top {
   height: 100%;
   background-color: #dc7720;
-  background-image: url("/images/top/home.jpg?1387497394"); }
+  background-image: url("../images/top/home.jpg?1387497394"); }
   /* line 17, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
   body.index .top .top-title {
-    height: 100%; }
-    /* line 19, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
+    height: 100%;
+    font-size: 1.5em; }
+    /* line 20, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
     body.index .top .top-title .btn {
       margin-top: 1em;
       font-size: 0.6em;
       color: white;
       border-color: white;
       border-color: rgba(255, 255, 255, 0.6); }
-      /* line 25, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
+      /* line 26, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
       body.index .top .top-title .btn:hover {
         border-color: white; }
-/* line 28, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
+/* line 29, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
 body.index .header-container {
   position: relative;
   z-index: 3;
@@ -2075,24 +2252,22 @@ body.index .header-container {
   height: 50px;
   margin-top: -50px; }
   @media only screen and (max-width: 768px) {
-    /* line 28, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
+    /* line 29, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
     body.index .header-container {
       height: auto;
       margin-top: 0; } }
   @media only screen and (min-width: 768px) {
-    /* line 28, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
+    /* line 29, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
     body.index .header-container {
       height: 70px;
       margin-top: -70px; } }
-/* line 41, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
+/* line 42, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
 body.index .section-about {
   overflow: visible; }
-  /* line 43, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
+  /* line 44, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
   body.index .section-about li {
     *zoom: 1;
-    float: left;
-    width: 29%;
-    padding: 0 2%;
+    padding: 0 2% 1em;
     font-size: 1.25em;
     font-weight: 200; }
     /* line 18, /Users/joshua/Code/brightbit.com/vendor/bundle/ruby/2.0.0/gems/bourbon-3.1.8/app/assets/stylesheets/addons/_clearfix.scss */
@@ -2102,25 +2277,27 @@ body.index .section-about {
     /* line 23, /Users/joshua/Code/brightbit.com/vendor/bundle/ruby/2.0.0/gems/bourbon-3.1.8/app/assets/stylesheets/addons/_clearfix.scss */
     body.index .section-about li:after {
       clear: both; }
-    /* line 50, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
-    body.index .section-about li .illustration {
-      text-align: center; }
-      /* line 52, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
-      body.index .section-about li .illustration .animate {
-        opacity: 0;
-        -webkit-transform: scale(0.1);
-        -moz-transform: scale(0.1);
-        -ms-transform: scale(0.1);
-        -o-transform: scale(0.1);
-        transform: scale(0.1);
-        -webkit-transition: all, 500ms;
-        -moz-transition: all, 500ms;
-        transition: all, 500ms;
-        -webkit-transition-delay: 0.1s;
-        -moz-transition-delay: 0.1s;
-        transition-delay: 0.1s; }
+    @media only screen and (min-width: 480px) {
+      /* line 44, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
+      body.index .section-about li {
+        float: left;
+        width: 29%; }
+        /* line 52, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
+        body.index .section-about li.animate img {
+          opacity: 0;
+          -webkit-transform: scale(0.1);
+          -moz-transform: scale(0.1);
+          -ms-transform: scale(0.1);
+          -o-transform: scale(0.1);
+          transform: scale(0.1);
+          -webkit-transition: all, 500ms;
+          -moz-transition: all, 500ms;
+          transition: all, 500ms;
+          -webkit-transition-delay: 0.1s;
+          -moz-transition-delay: 0.1s;
+          transition-delay: 0.1s; }
         /* line 57, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
-        body.index .section-about li .illustration .animate.animated {
+        body.index .section-about li.animated img {
           opacity: 1;
           -webkit-transform: scale(1);
           -moz-transform: scale(1);
@@ -2129,31 +2306,31 @@ body.index .section-about {
           transform: scale(1);
           -webkit-animation: grow 0.5s ease 0.1s;
           -moz-animation: grow 0.5s ease 0.1s;
-          animation: grow 0.5s ease 0.1s; }
-    /* line 62, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
+          animation: grow 0.5s ease 0.1s; } }
+    /* line 61, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
+    body.index .section-about li .illustration {
+      text-align: center; }
+    /* line 64, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
     body.index .section-about li .description h2 {
       font-size: 1.2em; }
-/* line 66, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
+/* line 68, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
 body.index .clients {
   overflow: hidden;
   background: white; }
-  /* line 70, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
+  /* line 72, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
   body.index .clients .section-clients {
     position: relative;
     z-index: 1;
     max-width: none;
     margin-top: 3em;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
     text-align: center; }
-    /* line 77, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
-    body.index .clients .section-clients h2 {
-      margin-bottom: 0.25em; }
     /* line 79, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
     body.index .clients .section-clients:before {
       position: absolute;
       top: -5em;
       left: 50%;
-      margin-left: 1em;
+      margin: 0.2em 0 0 -1em;
       display: block;
       content: "";
       height: 0px;
@@ -2163,101 +2340,104 @@ body.index .clients {
   /* line 91, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
   body.index .clients .client-logo {
     display: inline-block;
-    margin: 1em 2em;
+    margin: 1em 2em 3em;
     overflow: hidden;
     text-indent: 1000%;
-    white-space: nowrap; }
-    /* line 97, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
+    white-space: nowrap;
+    -webkit-transition: all 0;
+    -moz-transition: all 0;
+    transition: all 0; }
+    /* line 98, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
     body.index .clients .client-logo.client-baton {
       height: 47px;
       width: 135px;
       margin-top: 0px;
       line-height: 70px;
       vertical-align: middle;
-      background: url("/images/clients/baton.jpg?1387493156") no-repeat; }
+      background: url("../images/clients/baton.jpg?1387493156") no-repeat; }
       /* line 8, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
       body.index .clients .client-logo.client-baton:hover {
         background-position: 0 -47px; }
-    /* line 99, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
+    /* line 100, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
     body.index .clients .client-logo.client-cmr {
       height: 33px;
       width: 137px;
       margin-top: 0px;
       line-height: 70px;
       vertical-align: middle;
-      background: url("/images/clients/cmr.jpg?1387493156") no-repeat; }
+      background: url("../images/clients/cmr.jpg?1387493156") no-repeat; }
       /* line 8, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
       body.index .clients .client-logo.client-cmr:hover {
         background-position: 0 -33px; }
-    /* line 101, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
+    /* line 102, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
     body.index .clients .client-logo.client-guestdoor {
       height: 60px;
       width: 184px;
       margin-top: 8px;
       line-height: 70px;
       vertical-align: middle;
-      background: url("/images/clients/guestdoor.png?1387497394") no-repeat; }
+      background: url("../images/clients/guestdoor.png?1387497394") no-repeat; }
       /* line 8, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
       body.index .clients .client-logo.client-guestdoor:hover {
         background-position: 0 -60px; }
-    /* line 103, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
+    /* line 104, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
     body.index .clients .client-logo.client-lifechurch {
       height: 69px;
       width: 229px;
       margin-top: 0px;
       line-height: 70px;
       vertical-align: middle;
-      background: url("/images/clients/lifechurch.png?1387497394") no-repeat; }
+      background: url("../images/clients/lifechurch.png?1387497394") no-repeat; }
       /* line 8, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
       body.index .clients .client-logo.client-lifechurch:hover {
         background-position: 0 -69px; }
-    /* line 105, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
+    /* line 106, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
     body.index .clients .client-logo.client-saxum {
       height: 65px;
       width: 123px;
       margin-top: 5px;
       line-height: 70px;
       vertical-align: middle;
-      background: url("/images/clients/saxum.png?1387497394") no-repeat; }
+      background: url("../images/clients/saxum.png?1387497394") no-repeat; }
       /* line 8, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
       body.index .clients .client-logo.client-saxum:hover {
         background-position: 0 -65px; }
-    /* line 107, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
+    /* line 108, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
     body.index .clients .client-logo.client-sportsvault {
       height: 39px;
       width: 184px;
       margin-top: 0px;
       line-height: 70px;
       vertical-align: middle;
-      background: url("/images/clients/sportsvault.png?1387497394") no-repeat; }
+      background: url("../images/clients/sportsvault.png?1387497394") no-repeat; }
       /* line 8, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
       body.index .clients .client-logo.client-sportsvault:hover {
         background-position: 0 -39px; }
-  /* line 110, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
+  /* line 111, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
   body.index .clients .testimonial {
     max-width: none;
     padding-top: 5em;
     padding-bottom: 5em;
-    background: #333333 url("/images/testimonial-background.jpg?1387497394") center center no-repeat;
+    background: #333333 url("../images/testimonial-background.jpg?1387497394") center center no-repeat;
     background-size: cover;
     background-attachment: fixed;
     color: white; }
-    /* line 118, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
+    /* line 119, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
     body.index .clients .testimonial quote {
       display: block;
       max-width: 1200px;
       margin: 0 auto;
       padding: 4em 0; }
-    /* line 123, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
+    /* line 124, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
     body.index .clients .testimonial p {
       font-size: 1.75em;
       font-weight: 300;
       text-align: center; }
-      /* line 127, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
+      /* line 128, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
       body.index .clients .testimonial p.author {
         margin: 0;
         font-size: 1.25em; }
-/* line 132, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
+/* line 133, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_home.sass */
 body.index .section-ready {
   font-size: 1.5em;
   text-align: center; }
@@ -2319,13 +2499,13 @@ body.team .section-offices {
   width: 135px;
   height: 361px;
   display: block;
-  background: url("/images/work/glare.png?1387497394") no-repeat; }
+  background: url("../images/work/glare.png?1387497394") no-repeat; }
 
 /* line 17, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_work.sass */
 .work-desktop {
   width: 655px;
   height: 545px;
-  background-image: url("/images/work/desktop-frame.png?1387497394");
+  background-image: url("../images/work/desktop-frame.png?1387497394");
   padding: 20px 0; }
   /* line 22, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_work.sass */
   .work-desktop img {
@@ -2336,7 +2516,7 @@ body.team .section-offices {
 .work-iphone, .work-mobileweb {
   width: 320px;
   height: 520px;
-  background-image: url("/images/work/iphone-frame.png?1386828159");
+  background-image: url("../images/work/iphone-frame.png?1386828159");
   padding: 127px 35px; }
   /* line 31, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_work.sass */
   .work-iphone:after, .work-mobileweb:after {
@@ -2347,12 +2527,41 @@ body.team .section-offices {
 .work-android {
   width: 360px;
   height: 750px;
-  background-image: url("/images/work/android-frame.png?1386828159");
+  background-image: url("../images/work/android-frame.png?1386828159");
   padding: 117px 39px; }
   /* line 41, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_work.sass */
   .work-android:after {
     top: 116px;
     right: 37px; }
+
+/* line 2, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_jobs.sass */
+.jobs .container section, .jobs section section, .jobs .top .top-title section, .top .jobs .top-title section {
+  max-width: 768px; }
+/* line 5, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_jobs.sass */
+.jobs .post {
+  margin-top: 6em; }
+/* line 10, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_jobs.sass */
+.jobs .table tr td {
+  padding: 1em; }
+  /* line 12, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_jobs.sass */
+  .jobs .table tr td.title {
+    font-size: 1.25em; }
+  /* line 14, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_jobs.sass */
+  .jobs .table tr td.location {
+    color: #aaaaaa;
+    font-weight: 300; }
+    @media only screen and (min-width: 768px) {
+      /* line 14, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_jobs.sass */
+      .jobs .table tr td.location {
+        text-align: right;
+        line-height: 2.25em; } }
+  @media only screen and (max-width: 768px) {
+    /* line 10, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_jobs.sass */
+    .jobs .table tr td {
+      text-align: center; }
+      /* line 22, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_jobs.sass */
+      .jobs .table tr td.location {
+        padding-top: 0; } }
 
 /* line 2, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_blog.sass */
 .post-title {
@@ -2375,7 +2584,7 @@ body.team .section-offices {
 /* line 18, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_blog.sass */
 .post {
   max-width: 800px;
-  margin: 2em auto 0; }
+  margin: 2em auto 8em; }
   /* line 21, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_blog.sass */
   .post .post-meta {
     padding-bottom: 1em;
@@ -2395,7 +2604,7 @@ body.team .section-offices {
 
 /* line 38, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_blog.sass */
 .blog-index .post {
-  margin-top: 0;
+  margin: 0 auto;
   border-bottom: 1px solid #dddddd;
   padding: 5em 0;
   text-align: center; }
@@ -2417,3 +2626,18 @@ body.team .section-offices {
 /* line 2, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_errors.sass */
 #pages-errors section {
   text-align: center; }
+
+/* line 2, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_contact.sass */
+#contact p {
+  position: relative;
+  z-index: 1;
+  padding-left: 1.5em; }
+  /* line 6, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_contact.sass */
+  #contact p:before {
+    position: absolute;
+    z-index: 1;
+    top: 0.2em;
+    left: 0; }
+  /* line 11, /Users/joshua/Code/brightbit.com/source/stylesheets/sections/_contact.sass */
+  #contact p.ss-location {
+    margin-bottom: 1em; }

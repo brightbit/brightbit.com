@@ -35,7 +35,7 @@
         }
       });
     })();
-    return replaceSVG = (function() {
+    replaceSVG = (function() {
       if (!Modernizr.svg) {
         return $("img.svg").each(function() {
           var img, png_src;
@@ -45,6 +45,9 @@
         });
       }
     })();
+    if (window.location.hash === "#contact") {
+      return $('#contact').modal('show');
+    }
   });
 
   $(window).on('page:change', function() {
