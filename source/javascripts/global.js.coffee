@@ -29,6 +29,7 @@ $ ->
         png_src = img.attr("src").replace(".svg", ".png")
         img.attr("src", png_src)
 
+  $('#contact').modal('show') if window.location.hash is "#contact"
 
 
 $(window).on 'page:change', ->
