@@ -29,11 +29,11 @@ end
 activate :blog do |blog|
   blog.name              = "blog"
   blog.layout            = "post"
-  blog.permalink         = ":year/:month/:day/:title.html"
+  blog.permalink         = ":year/:month/:day/:title"
   blog.prefix            = "blog"
   #blog.tag_template      = "tag.html"
   #blog.taglink           = "tags/:tag.html"
-  # blog.summary_separator = /(READMORE)/
+  blog.summary_separator = /(READMORE)/
   # blog.summary_length    = 250
   # blog.per_page          = 5
   # blog.page_link         = "page/:num"
@@ -42,7 +42,7 @@ end
 activate :blog do |blog|
   blog.name              = "work"
   blog.layout            = "post"
-  blog.permalink         = ":title.html"
+  blog.permalink         = ":title"
   blog.prefix            = "work"
   #blog.tag_template      = "tag.html"
 end
@@ -50,7 +50,7 @@ end
 activate :blog do |blog|
   blog.name              = "jobs"
   blog.layout            = "jobs"
-  blog.permalink         = ":title.html"
+  blog.permalink         = ":title"
   blog.prefix            = "jobs"
   #blog.tag_template      = "tag.html"
 end

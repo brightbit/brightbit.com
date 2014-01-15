@@ -1,5 +1,6 @@
 ---
 title: Referral Program
+summary: Refer us a great project, get 5% of it in cash
 author: Vance Lucas
 date: 2014-01-14 22:06 UTC
 tags:
