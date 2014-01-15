@@ -4,6 +4,8 @@ summary: Refer us a great project, get 5% of it in cash
 author: Vance Lucas
 date: 2014-01-14 22:06 UTC
 tags:
+color: "#a3b05c"
+banner: "/images/posts/dollabillsyall.png"
 ---
 
 We doubled our headcount and shipped a lot of code in 2013. Looking ahead to
