@@ -11,8 +11,6 @@ set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'
 
-activate :directory_indexes
-
 require "lib/inline_svg"
 helpers InlineSVG
 
@@ -54,3 +52,6 @@ activate :blog do |blog|
   blog.prefix            = "jobs"
   #blog.tag_template      = "tag.html"
 end
+
+activate :directory_indexes
+
