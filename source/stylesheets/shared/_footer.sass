@@ -1,14 +1,15 @@
 .wrapper
   min-height: 100%
-  margin-bottom: -300px
+  @media only screen and (min-width: $break-medium)
+    margin-bottom: -300px
 
-  .footer-push
+footer, .footer-push
+  @media only screen and (min-width: $break-medium)
     height: 300px
 
 footer
   margin: 0
   padding: 0
-  height: 300px
   overflow: hidden
   background: $darkblue
   color: lighten($darkblue, 20%)
