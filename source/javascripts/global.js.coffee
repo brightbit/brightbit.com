@@ -40,6 +40,6 @@ $ ->
 
 
 $(window).on 'page:change', ->
-  animatevisible()
+  animateVisible()
   headerAffix()
   replaceSVG()
