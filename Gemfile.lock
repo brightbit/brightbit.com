@@ -17,7 +17,6 @@ GEM
       sass (>= 3.2.0)
       thor
     chunky_png (1.2.9)
-    closure-compiler (1.1.10)
     coderay (1.1.0)
     coffee-script (2.2.0)
       coffee-script-source
@@ -165,7 +164,6 @@ PLATFORMS
 
 DEPENDENCIES
   bourbon (~> 3.1.8)
-  closure-compiler (~> 1.1.10)
   growl_notify
   heroku
   jquery-middleman (~> 3.0.4)
