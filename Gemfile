@@ -8,6 +8,7 @@ gem 'middleman-livereload',         '~> 3.1.0'            # Live reloading for d
 gem 'middleman-syntax',             '~> 1.2.1'            # Syntax highlighting
 gem 'modernizr-rails',              require: false        # Feature detection library for HTML/CSS
 gem 'oj',                           '~> 2.5.4'            # Speeds up JS Compression
+gem 'rack-contrib',                 '~> 1.1.0'            # Adds some useful middleware (Rack::StaticCache)
 gem 'redcarpet',                    '~> 3.0.0'            # Syntax highlighting
 gem 'slim',                         '~> 2.0.1'            # Because who likes writing html
 gem 'therubyracer',                 '~> 0.12.0'           # Speeds up JS Compression
