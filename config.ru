@@ -7,4 +7,6 @@ use ::Rack::TryStatic,
   :urls => ["/"],
   :try  => [".html", "index.html", "/index.html"]
 
+use Rack::ContentType, "text/plain"
+
 run lambda { [404, {"Content-Type" => "text/plain"}, ["File not found!"]] }
