@@ -19,3 +19,7 @@ group :development do
   gem "rb-fsevent"
   gem "growl_notify"
 end
+
+group :production do
+  gem 'heroku-deflater'
+end
