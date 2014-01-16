@@ -18,6 +18,7 @@ configure :build do
   activate :minify_css
   activate :minify_javascript, compressor: Closure::Compiler.new
   activate :asset_hash
+  activate :automatic_image_sizes
   # activate :relative_assets
 end
 
