@@ -1,6 +1,6 @@
 ---
 title: Kikuchat
 type: Team Collaboration
-index_image: "work/kikuchat-desktop_1.png"
+index_image: "work/kikuchat-desktop-1.png"
 date: 2012-05-31
 ---
