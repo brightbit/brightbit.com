@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/ericboehs/rack-contrib.git
+  revision: 3380ab95932590cd7e5842de6d2817596acf920e
+  ref: 3380ab9
+  specs:
+    rack-contrib (1.2.0)
+      rack (>= 0.9.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -103,8 +111,6 @@ GEM
       method_source (~> 0.8)
       slop (~> 3.4)
     rack (1.5.2)
-    rack-contrib (1.1.0)
-      rack (>= 0.9.1)
     rack-livereload (0.3.15)
       rack
     rack-test (0.6.2)
@@ -168,7 +174,7 @@ DEPENDENCIES
   modernizr-rails
   oj (~> 2.5.4)
   pry
-  rack-contrib (~> 1.1.0)
+  rack-contrib!
   rb-fsevent
   redcarpet (~> 3.0.0)
   slim (~> 2.0.1)
