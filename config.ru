@@ -2,11 +2,13 @@
 
 require File.expand_path("../rack_try_static", __FILE__)
 
+use Rack::ContentType
+
+use Rack::Deflater
+
 use ::Rack::TryStatic,
   :root => "build",
   :urls => ["/"],
   :try  => [".html", "index.html", "/index.html"]
-
-use Rack::ContentType, "text/plain"
 
 run lambda { [404, {"Content-Type" => "text/plain"}, ["File not found!"]] }
