@@ -9,6 +9,7 @@ gem 'middleman-syntax',             '~> 1.2.1'            # Syntax highlighting
 gem 'modernizr-rails',              require: false        # Feature detection library for HTML/CSS
 gem 'oj',                           '~> 2.5.4'            # Speeds up JS Compression
 gem 'rack-contrib', github: 'ericboehs/rack-contrib', ref: '3380ab9' # For StaticCache
+gem 'rake-pipeline',                '~> 0.7.0'            # For building middleman during heroku slug compilation
 gem 'redcarpet',                    '~> 3.0.0'            # Syntax highlighting
 gem 'slim',                         '~> 2.0.1'            # Because who likes writing html
 gem 'therubyracer',                 '~> 0.12.0'           # Speeds up JS Compression
