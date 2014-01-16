@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.1.0'
+
 gem 'bourbon',                      '~> 3.1.8'            # Sass mixins gem
 gem 'jquery-middleman',             '~> 3.0.4'            # jQuery yo
 gem 'middleman',                    '~> 3.1.4'            # Of course
