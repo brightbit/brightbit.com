@@ -6,6 +6,8 @@ use Rack::ContentType
 
 use Rack::Deflater
 
+use Rack::StaticCache, urls: ["/images", "/stylesheets", "/javascripts", "/fonts"], root: "build"
+
 use ::Rack::TryStatic,
   :root => "build",
   :urls => ["/"],
