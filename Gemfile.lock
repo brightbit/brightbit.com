@@ -9,6 +9,7 @@ GEM
       sass (>= 3.2.0)
       thor
     chunky_png (1.2.9)
+    coderay (1.1.0)
     coffee-script (2.2.0)
       coffee-script-source
       execjs
@@ -52,6 +53,7 @@ GEM
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
       rb-kqueue (>= 0.2)
+    method_source (0.8.2)
     middleman (3.1.6)
       coffee-script (~> 2.2.0)
       compass (>= 0.12.2)
@@ -96,6 +98,10 @@ GEM
     multi_json (1.8.2)
     netrc (0.7.7)
     oj (2.5.4)
+    pry (0.9.12.4)
+      coderay (~> 1.0)
+      method_source (~> 0.8)
+      slop (~> 3.4)
     rack (1.5.2)
     rack-contrib (1.1.0)
       rack (>= 0.9.1)
@@ -120,6 +126,7 @@ GEM
     slim (2.0.2)
       temple (~> 0.6.6)
       tilt (>= 1.3.3, < 2.1)
+    slop (3.4.7)
     sprockets (2.10.1)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -160,6 +167,7 @@ DEPENDENCIES
   middleman-syntax (~> 1.2.1)
   modernizr-rails
   oj (~> 2.5.4)
+  pry
   rack-contrib (~> 1.1.0)
   rb-fsevent
   redcarpet (~> 3.0.0)

@@ -19,4 +19,5 @@ group :development do
   gem "watchr"
   gem "rb-fsevent"
   gem "growl_notify"
+  gem "pry"
 end
