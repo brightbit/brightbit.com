@@ -11,7 +11,7 @@
   background: white
   background: rgba(white, 0.95)
   border-bottom: 1px solid #eaeaea
-  padding: 5px 20px
+  padding: 5px 10px
   position: fixed
   top: 0
   left: 0
@@ -19,7 +19,6 @@
   +transition(all, 500ms)
   @media only screen and (min-width: $break-medium)
     position: relative
-    height: 45px
     padding: 15px 20px
     &.affix
       position: fixed
@@ -32,10 +31,6 @@
     float: left
     display: block
     margin: 0
-    @media only screen and (max-width: $break-small)
-      float: none
-      svg
-        margin: 0 auto
     h1
       text-indent: 100%
       overflow: hidden
@@ -49,6 +44,24 @@
     img
       .no-svg &
         display: block
+
+  .nav-toggle
+    @extend .button
+    display: none
+    +appearance(none)
+    outline: none
+    float: right
+    margin: 5px 0
+    background: none
+    border: 1px solid #eee
+    border-radius: 5px
+    padding: .7em 1em .5em
+    color: #bbb
+    font-size: 1em
+    cursor: pointer
+    @media only screen and (max-width: $break-small)
+      display: block
+
   .site-nav
     float: right
     text-align: right
@@ -67,12 +80,31 @@
         &.btn-primary
           color: white
           padding: 0.75em 2em 0.65em
-    @media only screen and (max-width: $break-small)
+    @media only screen and (min-width: $break-medium)
+      display: block !important
+    @media only screen and (max-width: $break-large)
       padding: 5px 0
+      li
+        font-size: .8em
+        margin-left: .5em
+        a
+          &.btn-primary
+            padding: 0.8em 0.8em 0.5em
+    @media only screen and (max-width: $break-small)
+      display: none
       float: none
       clear: both
       text-align: center
-      li a
-        padding: 0 0.25em
-        &.btn-primary
-          padding: 0.5em 1em 0.3em
+      li
+        display: block
+        margin: 0
+        border-top: 1px solid #eee
+        font-size: 1.25em
+        &:first-child, &:last-child
+          border-top: none
+        a
+          padding: 0 0.25em
+          display: block
+          &.btn-primary
+            margin-top: 0.5em
+            padding: 1em 1em 0.8em

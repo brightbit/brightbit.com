@@ -29,6 +29,13 @@ $ ->
         png_src = img.attr("src").replace(".svg", ".png")
         img.attr("src", png_src)
 
+  $('.nav-toggle').click ->
+    $target = $( $(this).data('target') )
+    if $target.css('display') is 'none'
+      $target.slideDown(250)
+    else
+      $target.slideUp(250)
+
   $('#contact').modal('show') if window.location.hash is "#contact"
 
 

@@ -4,7 +4,8 @@
       h1 Brightbit Apps
       = inline_svg "logo-header.svg"
       = image_tag "logo-header.png"
-    nav.site-nav
+    button.nav-toggle.ss-icon type="button" data-target=".site-nav" Rows
+    nav.site-nav.nav-collapse
       ul.list-inline
         li= link_to "Our Work", "/work"
         li= link_to "The Team", "/team"
