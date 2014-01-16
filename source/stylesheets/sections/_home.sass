@@ -48,11 +48,13 @@ body.index
       @media only screen and (min-width: $break-medium)
         &.animate img
           opacity: 0
+          +transition-delay(0.1s)
+          //+transform(scale(0.1))
+          +transition(all, 500ms)
         &.animated img
           opacity: 1
-          +transform(scale(1))
-          +transition-delay(0.1s)
-          +animation(grow 0.5s ease 0.1s)
+          //+transform(scale(1))
+          //+animation(grow 0.5s ease 0.1s)
 
 
   .clients
