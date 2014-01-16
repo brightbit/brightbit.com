@@ -1,3 +1,9 @@
 # encoding: utf-8
 
-watch("source") { system("bundle exec middleman build") }
+watch("source") {
+  system("echo 'Changes detected. Building...'")
+  system("
+      RACK_ENV=development bundle exec middleman build 2>&1 | grep -v 'identical' | grep -v 'Option :locals is not supported by Slim::Engine' | grep -v 'I18n.enforce_available_locales = false'
+      ")
+  system("echo 'Build complete.'")
+}
