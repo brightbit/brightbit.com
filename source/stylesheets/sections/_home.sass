@@ -40,6 +40,12 @@ body.index
       @media only screen and (min-width: $break-small)
         float: left
         width: 29%
+      .illustration
+        text-align: center
+      .description
+        h2
+          font-size: 1.2em
+      @media only screen and (min-width: $break-medium)
         &.animate img
           opacity: 0
           +transform(scale(0.1))
@@ -49,11 +55,6 @@ body.index
           opacity: 1
           +transform(scale(1))
           +animation(grow 0.5s ease 0.1s)
-      .illustration
-        text-align: center
-      .description
-        h2
-          font-size: 1.2em
 
 
   .clients
@@ -107,6 +108,9 @@ body.index
       background-size: cover
       background-attachment: fixed
       color: white
+      @media only screen and (min-width: $break-small)
+        padding-left: 10px
+        padding-right: 10px
       quote
         display: block
         max-width: 1200px
