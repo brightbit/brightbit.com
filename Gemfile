@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 ruby '2.1.0'
 
 gem 'bourbon',                      '~> 3.1.8'            # Sass mixins gem
+gem 'closure-compiler',             '~> 1.1.10'           # More efficient JS compressor
 gem 'jquery-middleman',             '~> 3.0.4'            # jQuery yo
 gem 'middleman',                    '~> 3.1.4'            # Of course
 gem 'middleman-blog',               '~> 3.3.0'            # Blog all the things
