@@ -8,6 +8,8 @@ color: "#b73a26"
 banner: "/images/posts/staff-matt-blackwell.png"
 ---
 
+<mark>Update: Matt no longer works for Brightbit as of April, 2013</mark>
+
 We would like to welcome Matt Blackwell to the Brightbit team as our new
 Sales and Business Operations Manager. Matt comes to us with over 3
 years of experience in Sales, Project Management, and Business
