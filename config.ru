@@ -5,7 +5,7 @@ require 'rack/contrib'
 
 require File.expand_path("../rack_try_static", __FILE__)
 
-use Rack::ContentType
+use Rack::ContentType, 'text/html; charset=utf-8'
 use Rack::Deflater
 use Rack::StaticCache, urls: ["/images", "/stylesheets", "/javascripts", "/fonts"], root: "build"
 use ::Rack::TryStatic,
