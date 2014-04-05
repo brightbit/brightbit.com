@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.1.0'
+ruby '2.1.1'
 
 gem 'bourbon',                      '~> 3.1.8'            # Sass mixins gem
 gem 'closure-compiler',             '~> 1.1.10'           # More efficient JS compressor
