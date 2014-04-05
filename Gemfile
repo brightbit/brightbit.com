@@ -7,6 +7,7 @@ gem 'closure-compiler',             '~> 1.1.10'           # More efficient JS co
 gem 'jquery-middleman',             '~> 3.0.4'            # jQuery yo
 gem 'middleman',                    '~> 3.1.4'            # Of course
 gem 'middleman-blog',               '~> 3.3.0'            # Blog all the things
+gem 'middleman-deploy',             '~> 0.2.3'            # Deploy to GH Pages
 gem 'middleman-livereload',         '~> 3.1.0'            # Live reloading for development
 gem 'middleman-syntax',             '~> 1.2.1'            # Syntax highlighting
 gem 'modernizr-rails',              require: false        # Feature detection library for HTML/CSS
