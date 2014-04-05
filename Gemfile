@@ -5,7 +5,7 @@ ruby '2.1.1'
 gem 'bourbon',                      '~> 3.1.8'            # Sass mixins gem
 gem 'closure-compiler',             '~> 1.1.10'           # More efficient JS compressor
 gem 'jquery-middleman',             '~> 3.0.4'            # jQuery yo
-gem 'middleman',                    '~> 3.1.4'            # Of course
+gem 'middleman',                    '~> 3.2.2'            # Of course
 gem 'middleman-blog',               '~> 3.3.0'            # Blog all the things
 gem 'middleman-deploy',             '~> 0.2.3'            # Deploy to GH Pages
 gem 'middleman-livereload',         '~> 3.1.0'            # Live reloading for development
