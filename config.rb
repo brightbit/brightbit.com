@@ -1,7 +1,6 @@
 require 'redcarpet'
 set :markdown_engine, :redcarpet
 set :markdown, :fenced_code_blocks => true, :smartypants => true
-activate :syntax, :line_numbers => true
 
 Time.zone = "UTC"
 
@@ -16,15 +15,14 @@ helpers InlineSVG
 
 configure :build do
   activate :minify_css
-  activate :minify_javascript, compressor: Closure::Compiler.new
   activate :asset_hash
   activate :automatic_image_sizes
   # activate :relative_assets
-  deploy.build_before = true
 end
 
 activate :deploy do |deploy|
   deploy.method = :git
+  deploy.build_before = true
   # Optional Settings
   # deploy.remote   = "custom-remote" # remote name or git url, default: origin
   # deploy.branch   = "custom-branch" # default: gh-pages
