@@ -3,7 +3,8 @@ html
   = partial "shared/head"
 
   body class=page_classes
-    = yield
+    //= yield
+    = partial "shared/closed"
 
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = partial "shared/tracking"
